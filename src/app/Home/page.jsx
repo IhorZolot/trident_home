@@ -1,4 +1,4 @@
-import Section1 from '@/components/Section-1'
+import Section1 from '@/components/Section1'
 import React from 'react'
 
 const Home = () => {
