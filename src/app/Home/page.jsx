@@ -1,12 +1,12 @@
-import Section1 from '@/components/Section1'
+import { Order } from '@/shared/Order/Order'
 import React from 'react'
 
-const Home = () => {
+const home = () => {
 	return (
 		<div>
-			<Section1 />
+			<Order />
 		</div>
 	)
 }
 
-export default Home
+export default home

@@ -1,17 +1,17 @@
 import Image from 'next/image'
 import React from 'react'
-import home from '../../public/images/section1/home.png'
+import home1 from '../../public/images/catalog/home1.png'
 
-const Section1 = () => {
+const Catalog = () => {
 	return (
 		<>
-			<div className='bg-yellow-400 w-[375px] h-[28px] flex justify-center '>
+			<div className='bg-yellow-400 px-4 py-2 flex justify-center '>
 				<a href='#' className=''>
 					Order trident Catalogue
 				</a>
 			</div>
-			<Image src={home} alt='Home' />
-			<div className='bg-blue-900 w-[375px] h-[113px] py-4 px-2'>
+			<Image src={home1} alt='Home' />
+			<div className='bg-blue-900 py-4 py-4 px-2'>
 				<a href='#' className='block w-[330px] text-white'>
 					A place that is more than an office - a place where you can create work-life balance
 				</a>
@@ -19,4 +19,4 @@ const Section1 = () => {
 		</>
 	)
 }
-export default Section1
+export default Catalog

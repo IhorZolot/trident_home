@@ -7,6 +7,7 @@ export const Header = () => {
 			<span>W Houses</span>
 			<div className='hidden lg:block '>Nav</div>
 			<TfiAlignJustify className='lg:hidden' />
+			<div className='hidden lg:block'>Rigth logo</div>
 		</div>
 	)
 }
