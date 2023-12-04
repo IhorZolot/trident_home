@@ -1,4 +1,4 @@
-import Catalog from '@/components/Catalog'
+import Catalog from '@/components/Invite'
 import Designs from '@/components/Designs'
 import Interiors from '@/components/Interiors'
 import Produce from '@/components/Produce'
