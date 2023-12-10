@@ -15,7 +15,7 @@ const Designs = () => {
 					Мodular houses
 				</button>
 			</div>
-			<ul className='flex flex-col justify-center gap-2'>
+			<ul className='flex flex-col justify-center'>
 				<li>
 					<Image src={home2} alt='Home' />
 					<h2 className='text-[#00204A] text-xl not-italic font-light leading-[44px]'>Garden Room</h2>
