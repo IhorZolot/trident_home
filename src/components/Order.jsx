@@ -1,20 +1,28 @@
 import React from 'react'
-import Container from './Container'
 import Image from 'next/image'
+import { VscArrowRight } from 'react-icons/vsc'
+
+import Container from '../shared/Container/Container'
 import orderbook from '../../public/images/order/orderbook.png'
 
 const Order = () => {
 	return (
 		<Container>
-			<div className=' flex flex-col justify-center rounded border border-neutral-100 shadow-[0px_0px_10px_0px_rgba(0,0,0,0.25)] border-solid mb-12 pt-4 px-4 pb-12'>
-				<h1 className='w-[325px] text-[#00204A] text-[22px] font-light leading-[28px] mb-4'>
-					Order our catalogue for free
-				</h1>
-				<p className='w-[312px]  text-center text-sm font-light leading-[22px]'>
-					Lorem ipsim dolor set amet lorem ipsim dolor set amet lorem ipsim dolor set amet{' '}
-				</p>
-				<Image src={orderbook} alt='orderbook' />
-				<button className='bg-[#00204A] w-[155px] text-white px-4 py-2'>Order now</button>
+			<div className=' flex flex-col justify-center items-center rounded border border-neutral-100 shadow-[0px_0px_10px_0px_rgba(0,0,0,0.25)] border-solid mb-12 pt-4 px-4 pb-12 lg:flex-row justify-between relative'>
+				<div className='flex  flex-col justify-start items-start px-12'>
+					<h1 className='w-[325px] text-[#00204A] text-[22px] font-light leading-[28px] mb-4 lg:w-[391.397px] text-[46px] leading-[45px] mb-8'>
+						Order our catalogue for free
+					</h1>
+					<p className='w-[312px]  text-center text-sm font-light leading-[22px] lg:text-start '>
+						Lorem ipsim dolor set amet lorem ipsim dolor set amet lorem ipsim dolor set amet
+					</p>
+				</div>
+				<div className='lg:flex items-start pr-[48px]'>
+					<Image src={orderbook} alt='orderbook' />
+				</div>
+				<button className='bg-[#00204A] w-[155px] flex gap-3 items-center text-white px-5 py-3 lg:absolute left-16 bottom-8 '>
+					Order now <VscArrowRight className='text-white' />
+				</button>
 			</div>
 		</Container>
 	)

@@ -1,7 +1,7 @@
 'use client'
-import ContactYou from '@/shared/ContactYou/ContactYou'
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import ContactYou from '@/shared/ContactYou/ContactYou'
 
 export const Order = () => {
 	const { register, handleSubmit } = useForm()
