@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import ContactYou from '@/shared/ContactYou/ContactYou'
 
 export const Order = () => {
 	const { register, handleSubmit } = useForm()
@@ -10,46 +9,46 @@ export const Order = () => {
 	}
 
 	return (
-		<div>
-			<div className='flex items-center min-h-screeen py-4 px-2'>
-				<form onSubmit={handleSubmit(submit)} className='w-1/2 min-h-screeen flex flex-col gap-2'>
+		<div className='lg:flex justify-center bg-[#F5F5F5] pb-[110px]'>
+			<div className=' bg-white lg:pt-[100px] px-[116px]'>
+				<form onSubmit={handleSubmit(submit)} className='px-2 pt-6 flex flex-col gap-6'>
 					<div>
 						<label className='flex flex-col gap-2'>
 							<span>How large is your house to be?</span>
-							<input className=' shrink-0 border border-solid border-[#EBE9E6] py-4 px-4' type='text' />
+							<input className='border border-solid border-[#EBE9E6] py-4 px-4' type='text' />
 						</label>
 					</div>
 					<div className='flex flex-col gap-2 '>
 						<span>Do you have your own plot of land?</span>
 						<label className='flex gap-2'>
-							<input className='shrink-0 border rounded-[11px] border-solid border-[#EBE9E6]' type='checkbox' />
+							<input className='border rounded-[11px] border-solid border-[#EBE9E6]' type='checkbox' />
 							<span>yes</span>
-							<input className='shrink-0 border rounded-[11px] border-solid border-[#EBE9E6]' type='checkbox' />
+							<input className='border rounded-[11px] border-solid border-[#EBE9E6]' type='checkbox' />
 							<span>no</span>
 						</label>
 					</div>
 					<div>
 						<label className='flex flex-col gap-2'>
 							<span>When do you expect the build to take place?</span>
-							<input className=' shrink-0 border border-solid border-[#EBE9E6] py-4 px-4' type='text' />
+							<input className='border border-solid border-[#EBE9E6] py-4 px-4' type='text' />
 						</label>
 					</div>
 					<div>
 						<label className='flex flex-col gap-2'>
 							<span>How much do you expect to invest in the build?</span>
-							<input className=' shrink-0 border border-solid border-[#EBE9E6] py-4 px-4' type='text' />
+							<input className='border border-solid border-[#EBE9E6] py-4 px-4' type='text' />
 						</label>
 					</div>
 					<div>
 						<label className='flex flex-col gap-2'>
 							<span>How did you find out about us?</span>
-							<input className=' shrink-0 border border-solid border-[#EBE9E6] py-4 px-4' type='text' />
+							<input className='border border-solid border-[#EBE9E6] py-4 px-4' type='text' />
 						</label>
 					</div>
 					<div>
 						<span>Do you have architect`s drawings?</span>
 						<label className='flex gap-2'>
-							<input className='shrink-0 border rounded-[11px] border-solid border-[#EBE9E6]' type='checkbox' />
+							<input className='border rounded-[11px] border-solid border-[#EBE9E6]' type='checkbox' />
 							<span>yes</span>
 							<input className='shrink-0 border rounded-[11px] border-solid border-[#EBE9E6]' type='checkbox' />
 							<span>no</span>
@@ -58,50 +57,34 @@ export const Order = () => {
 					<div>
 						<span>Do you have planning permission?</span>
 						<label className='flex gap-2'>
-							<input className='shrink-0 border rounded-[11px] border-solid border-[#EBE9E6]' type='checkbox' />
+							<input className='border rounded-[11px] border-solid border-[#EBE9E6]' type='checkbox' />
 							<span>yes</span>
-							<input className='shrink-0 border rounded-[11px] border-solid border-[#EBE9E6]' type='checkbox' />
+							<input className='border rounded-[11px] border-solid border-[#EBE9E6]' type='checkbox' />
 							<span>no</span>
 						</label>
 					</div>
 					<div>
 						<label className='flex flex-col gap-2'>
 							<span>Name and surname</span>
-							<input
-								{...register('name')}
-								className=' shrink-0 border border-solid border-[#EBE9E6] py-4 px-4'
-								type='text'
-							/>
+							<input {...register('name')} className='border border-solid border-[#EBE9E6] py-4 px-4' type='text' />
 						</label>
 					</div>
 					<div>
 						<label className='flex flex-col gap-2'>
 							<span>City</span>
-							<input
-								{...register('city')}
-								className=' shrink-0 border border-solid border-[#EBE9E6] py-4 px-4'
-								type='text'
-							/>
+							<input {...register('city')} className='border border-solid border-[#EBE9E6] py-4 px-4' type='text' />
 						</label>
 					</div>
 					<div>
 						<label className='flex flex-col gap-2'>
 							<span>Phone number</span>
-							<input
-								{...register('phone')}
-								className='shrink-0 border border-solid border-[#EBE9E6] py-4 px-4'
-								type='text'
-							/>
+							<input {...register('phone')} className='border border-solid border-[#EBE9E6] py-4 px-4' type='text' />
 						</label>
 					</div>
 					<div>
 						<label className='flex flex-col gap-2'>
 							<span>Email address</span>
-							<input
-								{...register('email')}
-								className=' shrink-0 border border-solid border-[#EBE9E6] py-4 px-4'
-								type='text'
-							/>
+							<input {...register('email')} className='border border-solid border-[#EBE9E6] py-4 px-4' type='text' />
 						</label>
 					</div>
 					<div>
@@ -126,6 +109,12 @@ export const Order = () => {
 					<button type='submit' className='bg-yellow-400  py-4 uppercase'>
 						Get request
 					</button>
+					<a
+						href='#'
+						className='block px-2 pb-6 text-[rgba(61,61,61,0.65)] text-sm font-[275] leading-[17px] underline text-center mb-[80px]'
+					>
+						You can read our Privacy Policy here
+					</a>
 				</form>
 			</div>
 		</div>
