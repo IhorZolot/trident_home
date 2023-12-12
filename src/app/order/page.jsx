@@ -7,6 +7,7 @@ const order = () => {
 	return (
 		<div>
 			<OrderCatalog />
+			<ContactYou />
 			<Order />
 		</div>
 	)

@@ -6,8 +6,8 @@ import Documents from './components/Documents'
 import Floorplans from './components/Floorplans'
 import Quality from '../about/components/Quality'
 import Order from '@/components/Order'
-import StandsrtOptions from './components/StandsrtOptions'
 import Recomended from './components/Recomended'
+import StandartOptions from './components/StandartOptions'
 
 const garden = () => {
 	return (
@@ -19,7 +19,7 @@ const garden = () => {
 			<Floorplans />
 			<Quality />
 			<Order />
-			<StandsrtOptions />
+			<StandartOptions />
 			<Recomended />
 		</div>
 	)

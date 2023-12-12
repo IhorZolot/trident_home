@@ -11,8 +11,6 @@ export const Order = () => {
 
 	return (
 		<div>
-			<ContactYou />
-			{/* ++++++++++++++++++++++++++++++++++++++++++++++++ */}
 			<div className='flex items-center min-h-screeen py-4 px-2'>
 				<form onSubmit={handleSubmit(submit)} className='w-1/2 min-h-screeen flex flex-col gap-2'>
 					<div>
