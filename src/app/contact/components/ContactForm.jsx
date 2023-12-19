@@ -80,11 +80,7 @@ const ContactForm = () => {
 					</div>
 					<div>
 						<label className='flex gap-3 items-center'>
-							<input
-								{...register('agree')}
-								type='checkbox'
-								className='w-[22px] h-[22px] border border-solid border-[#EBE9E6]'
-							/>
+							<input {...register('agree')} type='checkbox' className=' border border-solid border-[#EBE9E6]' />
 							<span className='text-[10px] not-italic font-light leading-3'>
 								I agree that TRIDENT can contact me to send me the Catalogue of houses.
 							</span>
@@ -92,12 +88,8 @@ const ContactForm = () => {
 					</div>
 					<div>
 						<label className='flex gap-3 items-center'>
-							<input
-								{...register('rules')}
-								type='checkbox'
-								className='w-[22px] h-[22px] border border-solid border-[#EBE9E6]'
-							/>
-							<span className='text-[10px] not-italic font-light leading-3 lg:w-[527.106px] '>
+							<input {...register('rules')} type='checkbox' className=' border border-solid border-[#EBE9E6]' />
+							<span className='text-[10px] not-italic font-light leading-3  '>
 								I wish to receive information about open house events, other materials relevant to my interests and news
 								via Newsletter from TRIDENT
 							</span>

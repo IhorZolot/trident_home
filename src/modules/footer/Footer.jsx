@@ -10,7 +10,7 @@ const Footer = () => {
 	// py-8
 	return (
 		<div className='bg-[#00204A]  text-white py-6 px-6'>
-			<div className='lg:flex gap-12 mb-12'>
+			<div className='lg:grid grid-cols-4 w-full gap-12 mb-12'>
 				<div className='flex flex-col gap-2 mb-8 text-white text-[15px] not-italic font-light leading-[18px]'>
 					<hi className='block mb-8'>W Houses</hi>
 					<span className='flex gap-2 items-center'>

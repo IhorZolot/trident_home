@@ -1,18 +1,9 @@
 import React from 'react'
 import navLinks from '../../../shared/Data/nav-links'
+import NavBar from '@/shared/NavBar/NavBar'
 
 const FooterLink = () => {
-	return (
-		<ul className='hidden lg:flex flex-col gap-2'>
-			{navLinks.map(item => (
-				<li key={item}>
-					<a href='#' className='text-white text-[15px] font-light leading-[18px]'>
-						{item}
-					</a>
-				</li>
-			))}
-		</ul>
-	)
+	return <NavBar classes='flex-col text-red-500' />
 }
 
 export default FooterLink

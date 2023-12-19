@@ -4,7 +4,7 @@ import sauna3 from './image/sauna3.png'
 
 const Floorplans = () => {
 	return (
-		<div className='mb-8'>
+		<div className='mb-8 lg:order-3'>
 			<h1 className='px-2 mb-4text-[#00204A] text-[26px] font-light leading-[45px]'>Floorplans</h1>
 			<div className='px-2 grid grid-cols-3 gap-2 w-[375px]'>
 				<Image src={sauna3} alt='Plan' />

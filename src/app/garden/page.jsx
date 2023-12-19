@@ -14,9 +14,11 @@ const garden = () => {
 		<div>
 			<GardenRoom />
 			<GardenInteriors />
-			<TechnicalDetails />
-			<Documents />
-			<Floorplans />
+			<div className='flex flex-col lg:flex-row'>
+				<TechnicalDetails />
+				<Documents />
+				<Floorplans />
+			</div>
 			<Quality />
 			<Order />
 			<StandartOptions />

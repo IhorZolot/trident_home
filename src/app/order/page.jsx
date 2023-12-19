@@ -5,9 +5,9 @@ import ContactYou from '@/shared/ContactYou/ContactYou'
 
 const order = () => {
 	return (
-		<div>
+		<div className=''>
 			<OrderCatalog />
-			<ContactYou />
+
 			<Order />
 		</div>
 	)

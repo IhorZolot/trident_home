@@ -1,12 +1,15 @@
 import React from 'react'
 import navLinks from '../Data/nav-links'
+import Link from 'next/link'
 
-const NavBar = () => {
+const NavBar = ({ classes }) => {
 	return (
-		<ul className='hidden lg:flex gap-8'>
+		<ul className={`${classes ? classes : ' '} hidden lg:flex gap-8`}>
 			{navLinks.map(item => (
-				<li key={item}>
-					<a href='#'>{item}</a>
+				<li key={item.title}>
+					<Link href={item.src} className='hover:text-blue-700 focus:outline-none'>
+						{item.title}
+					</Link>
 				</li>
 			))}
 		</ul>

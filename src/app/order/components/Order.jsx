@@ -1,4 +1,5 @@
 'use client'
+import ContactYou from '@/shared/ContactYou/ContactYou'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 
@@ -9,9 +10,10 @@ export const Order = () => {
 	}
 
 	return (
-		<div className='lg:flex justify-center bg-[#F5F5F5] pb-[110px]'>
-			<div className=' bg-white lg:pt-[100px] px-[116px]'>
-				<form onSubmit={handleSubmit(submit)} className='px-2 pt-6 flex flex-col gap-6'>
+		<div className='lg:flex justify-center bg-[#F5F5F5]  pb-[110px]'>
+			<div className=' bg-white  w-1/2 '>
+				<ContactYou />
+				<form onSubmit={handleSubmit(submit)} className='px-2 pt-6 flex flex-col gap-6 lg:px-[116px]'>
 					<div>
 						<label className='flex flex-col gap-2'>
 							<span>How large is your house to be?</span>
@@ -106,7 +108,7 @@ export const Order = () => {
 						Your consent may be revoked at any time by sending an e-mail to dpo@danwood.pl, with the consequence of the
 						erasure of your contact details from the distribution of our materials.
 					</p>
-					<button type='submit' className='bg-yellow-400  py-4 uppercase'>
+					<button type='submit' className='bg-yellow-400 max-w-[200px] mx-auto px-4 py-4 uppercase'>
 						Get request
 					</button>
 					<a

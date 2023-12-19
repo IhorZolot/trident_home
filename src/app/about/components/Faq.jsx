@@ -13,7 +13,7 @@ export const Faq = () => {
 			<div className='text-[#00204A] mb-14 lg:flex  justify-around'>
 				<Image src={faq19} alt='flat' className='hidden lg:block h-full' />
 				<div>
-					<h1 className=' text-[26px]font-light leading-[30px] uppercase mb-12 lg:text-[46px] font-light leading-[45px]'>
+					<h1 className='text-[26px]font-light leading-[30px] uppercase mb-12 lg:text-[46px] lg:font-light lg:leading-[45px]'>
 						Faq
 					</h1>
 					<ul className='w-[370px] text-[15px] font-normal leading-5 flex flex-col gap-2 lg:gap-4 '>
