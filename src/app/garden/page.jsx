@@ -14,7 +14,7 @@ const garden = () => {
 		<div>
 			<GardenRoom />
 			<GardenInteriors />
-			<div className='flex flex-col lg:flex-row'>
+			<div className='flex flex-col lg:flex-row rev justify-around items-center'>
 				<TechnicalDetails />
 				<Documents />
 				<Floorplans />

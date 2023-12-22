@@ -20,8 +20,10 @@ const Order = () => {
 				<div className='lg:flex items-start lg:pr-[48px]'>
 					<Image src={orderbook} alt='orderbook' />
 				</div>
-				<button className='bg-[#00204A] w-[155px] flex gap-3 items-center text-white px-5 py-3 lg:absolute left-16 bottom-8 '>
-					Order now <VscArrowRight className='text-white' />
+				<button className='bg-[#00204A] text-white px-6 py-3 lg:absolute left-16 bottom-8 '>
+					<a href='/catalog' className='flex gap-3 items-center '>
+						Order now <VscArrowRight className='text-white' />
+					</a>
 				</button>
 			</div>
 		</Container>

@@ -10,7 +10,9 @@ const Designs = () => {
 			<div className='pt-8'>
 				<h1 className='text-[#00204A] block text-[26px] font-light leading-[45px] mb-6'>Our house designs</h1>
 				<div className='flex gap-2 mb-12 text-[15px] '>
-					<button className='bg-yellow-400 px-4 py-3 uppercase'>Garden rooms</button>
+					<button className='bg-yellow-400 px-4 py-3 uppercase'>
+						<a href='/garden'>Garden rooms</a>
+					</button>
 					<button className='px-4 py-3 border border-solid border-r-8 border-[#F4D059] uppercase'>
 						Мodular houses
 					</button>
