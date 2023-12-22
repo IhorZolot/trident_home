@@ -1,9 +1,7 @@
 import React from 'react'
-import navLinks from '../../../shared/Data/nav-links'
 import NavBar from '@/shared/NavBar/NavBar'
 
 const FooterLink = () => {
-	return <NavBar classes='flex-col text-red-500' />
+	return <NavBar classes='lg:flex-col lg:gap-4' />
 }
-
 export default FooterLink

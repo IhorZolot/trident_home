@@ -1,11 +1,10 @@
 import React from 'react'
 import Sprite from '../../../../public/images/Sprite'
-import Container from '@/shared/Container/Container'
 
 const Quality = () => {
 	return (
-		<Container>
-			<ul className='flex flex-col gap-4 mb-12 bg-[#F5F5F5] py-12 lg:flex-row lg:gap-14 '>
+		<>
+			<ul className='grid grid-cols-1 px-2 gap-4 mb-12 bg-[#F5F5F5] py-12 lg:grid lg:grid-cols-4 lg:gap-14 lg:px-16'>
 				<li className='flex gap-4 items-start lg:flex-col '>
 					<Sprite name={'time'} />
 					<div className='flex flex-col gap-2 py-2'>
@@ -51,7 +50,7 @@ const Quality = () => {
 					</div>
 				</li>
 			</ul>
-		</Container>
+		</>
 	)
 }
 

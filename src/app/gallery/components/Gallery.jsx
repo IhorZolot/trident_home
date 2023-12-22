@@ -1,16 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
-import rectangle3287 from '../../../../public/images/gallery/rectangle3287.png'
 import Container from '@/shared/Container/Container'
 import { galleryArr } from '@/shared/Data/gallery-image-data'
 
 const Gallery = () => {
 	return (
 		<Container>
-			<div className='py-6 mb-12'>
+			<div className='mb-12'>
 				<div className='lg:flex gap-8'>
 					<hi className='text-[#00204A] text-[26px] block font-medium leading-[45px] mb-6'>Gallery</hi>
-					<div className='flex gap-2 mb-12'>
+					<div className='flex gap-2 mb-8'>
 						<button className='px-6 py-2 border border-solid border-r-[16px] border-[#F4D059]'>Choose model</button>
 						<button className='px-6 py-2 border border-solid border-r-8 border-[#F4D059]'>Choose interior</button>
 					</div>
@@ -18,7 +17,7 @@ const Gallery = () => {
 				<ul className='grid gap-6 lg:grid-cols-3'>
 					{galleryArr.slice(0, 6).map(item => (
 						<li key={item.id}>
-							<Image src={item.img} alt='img' />
+							<Image src={item.img} alt='img' className='w-full' />
 						</li>
 					))}
 				</ul>

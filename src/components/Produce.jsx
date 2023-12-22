@@ -13,7 +13,7 @@ const Produce = () => {
 						Trident Modular Housing produce and assemble modular houses that are very high quality and they can be used
 						as temporary as well as permanent residence.
 					</span>
-					<ul className='flex flex-col gap-4 lg:grid grid-cols-2 lg:gap-8'>
+					<ul className='grid grid-cols-1 gap-4 lg:grid lg:grid-cols-2 lg:gap-16'>
 						<li>
 							<div className='flex gap-2 items-center '>
 								<Sprite name={'icon'} />

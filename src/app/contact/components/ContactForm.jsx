@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { VscArrowRight } from 'react-icons/vsc'
+import ContactYou from '@/shared/ContactYou/ContactYou'
 
 const ContactForm = () => {
 	const requestSchema = z.object({
@@ -27,8 +28,9 @@ const ContactForm = () => {
 		reset()
 	}
 	return (
-		<div className='lg:flex justify-center bg-[#F5F5F5] pb-[110px]'>
-			<div className=' bg-white lg:pt-[100px] px-[116px]'>
+		<div className='lg:flex justify-center bg-[#F5F5F5] lg:pb-[110px]'>
+			<div className=' bg-white lg:w-8/12 '>
+				<ContactYou />
 				<form onSubmit={handleSubmit(submit)} className='px-2 pt-6 flex flex-col gap-6'>
 					<div>
 						<label className='flex flex-col gap-2'>
