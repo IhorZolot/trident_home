@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import Image from 'next/image'
 
 import { FaPlus } from 'react-icons/fa6'
@@ -6,54 +7,35 @@ import { FiMinus } from 'react-icons/fi'
 
 import Container from '@/shared/Container/Container'
 import faq19 from '../../../../public/images/order/faq19.png'
+import { faqData } from '@/shared/Data/Faq/faqData'
 
 export const Faq = () => {
+	const [openIndex, setOpenIndex] = useState(null)
+
+	const toggleQuestion = index => {
+		setOpenIndex(prevIndex => (prevIndex === index ? null : index))
+	}
+
 	return (
 		<Container>
-			<div className='text-[#00204A] mb-14 lg:flex  justify-around'>
-				<Image src={faq19} alt='flat' className='hidden lg:block h-full' />
-				<div>
+			<div className='text-[#00204A] mb-14 lg:flex lg:justify-around   '>
+				<Image src={faq19} alt='flat' className='hidden lg:block lg:h-full' />
+				<div className='lg:w-1/2'>
 					<h1 className='text-[26px]font-light leading-[30px] uppercase mb-12 lg:text-[46px] lg:font-light lg:leading-[45px]'>
 						Faq
 					</h1>
-					<ul className='w-[370px] text-[15px] font-normal leading-5 flex flex-col gap-2 lg:gap-4 '>
-						<li className='flex gap-2 items-center justify-between'>
-							Can the garden rooms be used all year round be used all year round? <FaPlus />
-						</li>
-						<hr />
-						<li className='flex gap-2 items-center justify-between'>
-							Can the garden rooms be used all year round? <FaPlus />
-						</li>
-						<hr />
-						<li className='flex gap-2 items-center justify-between'>
-							Can the garden rooms be used all year round? <FaPlus />
-						</li>
-						<hr />
-						<li className='flex gap-2 items-center justify-between'>
-							Can the garden rooms be used all year round? <FaPlus />
-						</li>
-						<hr />
-						<li className='flex gap-2 items-center justify-between'>
-							Can the garden rooms be used all year round be used all year round? <FaPlus />
-						</li>
-						<hr />
-						<li className='flex gap-2 items-center justify-between'>
-							Can the garden rooms be used all year round?
-							<FaPlus />
-						</li>
-						<hr />
-						<li className='flex gap-2 items-center justify-between'>
-							Can the garden rooms be used all year round? <FiMinus />
-						</li>
+					<ul className='w-[full] text-[#00204A] flex flex-col gap-2 lg:gap-4 '>
+						{faqData.map((item, id) => (
+							<li key={id} className=''>
+								<button onClick={() => toggleQuestion(id)} className='flex justify-between gap-4 mb-4'>
+									{item.question}
+									{openIndex === id ? <FiMinus /> : <FaPlus />}
+								</button>
+								{openIndex === id && <p className='text-[15px] font-normal leading-5'>{item.answer}</p>}
+								<hr className='py-2 w-[550px]' />
+							</li>
+						))}
 					</ul>
-					<p className='w-[370px]'>
-						The insulation in a Trident Modular garden room is second to none. The room will be warm inwinter and cool
-						in summer - available to use all year round.How much input can I have in the design of my building?You tell
-						us about your vision for your new garden room, and we will work with you toget the design just right.
-						External and internal finishes can all be amended to suityour budget and taste. The room will reflect your
-						own style.
-					</p>
-					<hr className='w-[370px]' />
 				</div>
 			</div>
 		</Container>

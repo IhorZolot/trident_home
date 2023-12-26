@@ -1,5 +1,11 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
 
 import Container from '../shared/Container/Container'
 import { seoArr, seoSmallArr } from '@/shared/Data/seo-img-data'
@@ -8,20 +14,24 @@ const Seo = () => {
 	return (
 		<Container>
 			<div className='mb-12'>
-				<ul className='mb-6 flex justify-center lg:hidden'>
-					{seoSmallArr.slice(0, 1).map(items => (
-						<li key={items.id}>
-							<Image src={items.img} alt='photo'></Image>
-						</li>
-					))}
-				</ul>
-				<ul className='hidden lg:flex mb-6  justify-center '>
-					{seoArr.slice(0, 1).map(items => (
-						<li key={items.id}>
-							<Image src={items.img} alt='photo'></Image>
-						</li>
-					))}
-				</ul>
+				<div className='mb-6 flex justify-center lg:hidden'>
+					<Swiper modules={[Navigation]} slidesPerView={1} spaceBetween={15} loop={true} navigation>
+						{seoSmallArr.map(items => (
+							<SwiperSlide key={items.id}>
+								<Image src={items.img} alt='photo' className='w-full object-cover' />
+							</SwiperSlide>
+						))}
+					</Swiper>
+				</div>
+				<div className='hidden lg:flex mb-6 justify-center'>
+					<Swiper modules={[Navigation]} slidesPerView={3} spaceBetween={15} loop={true} navigation>
+						{seoArr.map(items => (
+							<SwiperSlide key={items.id}>
+								<Image src={items.img} alt='photo' />
+							</SwiperSlide>
+						))}
+					</Swiper>
+				</div>
 				<div className=' text-[#00204A]'>
 					<h1 className='w-[595px] text-3xl font-normal leading-[45px] mb-6'>Seo headline</h1>
 					<p className='w-full text-sm font-light leading-[22.486px] lg:w-[1136.337px] '>
