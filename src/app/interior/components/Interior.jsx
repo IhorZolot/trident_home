@@ -1,9 +1,8 @@
 'use client'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from '@/shared/Container/Container'
 import { interiorArr } from '@/shared/Data/interior-img-data'
-import image44 from '../../../../public/images/interiors/image44.png'
 
 const Interior = () => {
 	const [selectedImage, setSelectedImage] = useState()
@@ -11,6 +10,11 @@ const Interior = () => {
 	const handleImageClick = imageSrc => {
 		setSelectedImage(imageSrc)
 	}
+	useEffect(() => {
+		if (interiorArr.length > 0) {
+			setSelectedImage(interiorArr[0].img)
+		}
+	}, [])
 
 	return (
 		<Container>
