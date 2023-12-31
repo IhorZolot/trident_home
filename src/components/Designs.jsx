@@ -40,7 +40,7 @@ const Designs = () => {
 					modules={[Navigation]}
 					slidesPerView={3}
 					spaceBetween={15}
-					loop={true}
+					loop={false}
 					navigation={{
 						nextEl: '.custom-swiper-button-next',
 						prevEl: '.custom-swiper-button-prev',
@@ -53,14 +53,14 @@ const Designs = () => {
 							<p className='text-[#00204A] font-light leading-[23px]'>{item.desc}</p>
 						</SwiperSlide>
 					))}
-					<div className='custom-swiper-button-next absolute top-[90px] left-0 z-10'>
+					<div className='custom-swiper-button-prev absolute top-[90px] left-0 z-10'>
 						<div className='bg-[#00204A] p-2 w-[49.178px] h-[44.479px] flex justify-center items-center '>
 							<span className='text-white'>
 								<VscChevronLeft />
 							</span>
 						</div>
 					</div>
-					<div className='custom-swiper-button-prev absolute top-[90px] right-0 z-10'>
+					<div className='custom-swiper-button-next absolute top-[90px] right-0 z-10'>
 						<div className='bg-[#F4D059] p-2 w-[49.178px] h-[44.479px] flex justify-center items-center '>
 							<span className='text-[#00204A]'>
 								<VscChevronRight />

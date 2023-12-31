@@ -1,9 +1,14 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
+import { useMediaQuery } from 'react-responsive'
 import Container from '@/shared/Container/Container'
 import { galleryArr } from '@/shared/Data/gallery-image-data'
 
 const Gallery = () => {
+	const isMobile = useMediaQuery({
+		query: '(min-width: 1024px)',
+	})
 	return (
 		<Container>
 			<div className='mb-12'>
@@ -15,7 +20,7 @@ const Gallery = () => {
 					</div>
 				</div>
 				<ul className='grid gap-6 lg:grid-cols-3'>
-					{galleryArr.slice(0, 6).map(item => (
+					{galleryArr.slice(0, !isMobile ? 6 : galleryArr.length).map(item => (
 						<li key={item.id}>
 							<Image src={item.img} alt='img' className='w-full' />
 						</li>

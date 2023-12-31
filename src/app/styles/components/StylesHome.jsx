@@ -15,8 +15,14 @@ const StylesHome = () => {
 				</div>
 				<ul className='grid gap-6 lg:grid-cols-3'>
 					{stylesArr.map(item => (
-						<li key={item.id} className='relative overflow-hidden'>
-							<Image src={item.img} alt='img' width='100%' layout='intrinsic' />
+						<li key={item.id} className='relative overflow-hidden  '>
+							<Image
+								src={item.img}
+								alt='img'
+								width='100%'
+								layout='intrinsic'
+								className='w-[100%] aspect-square object-cover   '
+							/>
 						</li>
 					))}
 				</ul>

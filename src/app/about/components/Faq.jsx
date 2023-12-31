@@ -26,13 +26,12 @@ export const Faq = () => {
 					</h1>
 					<ul className='w-[full] text-[#00204A] flex flex-col gap-2 lg:gap-4 '>
 						{faqData.map((item, id) => (
-							<li key={id} className=''>
-								<button onClick={() => toggleQuestion(id)} className='flex justify-between gap-4 mb-4'>
+							<li key={id} className='border-b-2 border-gray-700  '>
+								<div onClick={() => toggleQuestion(id)} className='flex  justify-between gap-4 mb-4'>
 									{item.question}
 									{openIndex === id ? <FiMinus /> : <FaPlus />}
-								</button>
+								</div>
 								{openIndex === id && <p className='text-[15px] font-normal leading-5'>{item.answer}</p>}
-								<hr className='py-2 w-[550px]' />
 							</li>
 						))}
 					</ul>

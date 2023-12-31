@@ -73,7 +73,7 @@ const FilterHouse = ({ closeFilter }) => {
 							<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>no</span>
 						</label>
 					</div>
-					<div className='pb-6'>
+					<div className='pb-6 grid grid-cols-2'>
 						<button className='bg-[#E0DFDC] px-[68px] py-4 text-black text-[10px]  font-bold leading-3 tracking-[1px] uppercase'>
 							Clear
 						</button>

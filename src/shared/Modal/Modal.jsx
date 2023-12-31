@@ -1,4 +1,5 @@
 'use client'
+import { Header } from '@/modules/header/Header'
 import React, { useEffect } from 'react'
 
 const Modal = ({ children, close }) => {
@@ -24,7 +25,7 @@ const Modal = ({ children, close }) => {
 			onClick={onBackdropClick}
 			className='fixed inset-0 bg-[rgba(0,0,0,0.50)] z-1 backdrop-blur-md w-full h-full justify-center items-center'
 		>
-			{children}
+			<div className='bg-white'>{children}</div>
 		</div>
 	)
 }
