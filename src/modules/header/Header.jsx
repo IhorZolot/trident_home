@@ -38,7 +38,7 @@ export const Header = () => {
 			</div>
 			{isMobileMenuOpen && (
 				<Modal close={closeMenu}>
-					<MobileMenu />
+					<MobileMenu close={closeMenu} />
 				</Modal>
 			)}
 		</>

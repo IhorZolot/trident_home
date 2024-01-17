@@ -7,16 +7,12 @@ import Container from '@/shared/Container/Container'
 import { gardenArr } from '@/shared/Data/garden-img-data'
 
 const GardenRoom = () => {
-	const [selectedImage, setSelectedImage] = useState()
+	const [selectedImage, setSelectedImage] = useState(gardenArr[2].img)
 
 	const handleImageClick = imageSrc => {
 		setSelectedImage(imageSrc)
 	}
-	useEffect(() => {
-		if (gardenArr.length > 0) {
-			setSelectedImage(gardenArr[0].img)
-		}
-	}, [])
+
 	return (
 		<Container>
 			<div className='flex flex-col py-6 text-[#00204A]'>

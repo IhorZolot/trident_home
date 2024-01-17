@@ -8,7 +8,7 @@ import orderbook from '../../public/images/order/orderbook.png'
 const Order = () => {
 	return (
 		<Container>
-			<div className=' flex flex-col justify-center items-center rounded border border-neutral-100 shadow-[0px_0px_10px_0px_rgba(0,0,0,0.25)] border-solid mb-14 pt-4 px-4 pb-12 lg:flex-row lg:justify-between relative'>
+			<div className=' flex flex-col justify-center items-center rounded border border-neutral-100 shadow-[0px_0px_10px_0px_rgba(0,0,0,0.25)] border-solid mb-12 pt-4 px-4 pb-12 lg:flex-row lg:justify-between relative lg:mb-14'>
 				<div className='flex  flex-col justify-start items-start px-12 mb-6'>
 					<h1 className=' text-[#00204A] text-[26px] font-light leading-[28px] mb-4 lg:w-[391.397px] lg:text-[46px] lg:leading-[45px] lg:mb-8'>
 						Order our catalogue for free

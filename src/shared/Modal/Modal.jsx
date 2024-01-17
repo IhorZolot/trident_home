@@ -1,5 +1,4 @@
 'use client'
-import { Header } from '@/modules/header/Header'
 import React, { useEffect } from 'react'
 
 const Modal = ({ children, close }) => {
@@ -9,13 +8,16 @@ const Modal = ({ children, close }) => {
 		}
 	}
 	useEffect(() => {
+		document.body.style.overflow = 'hidden'
 		const handleKeyDown = event => {
 			if (event.key === 'Escape') {
 				close()
 			}
 		}
 		document.addEventListener('keydown', handleKeyDown)
+
 		return () => {
+			document.body.style.overflow = 'visible'
 			document.removeEventListener('keydown', handleKeyDown)
 		}
 	}, [close])

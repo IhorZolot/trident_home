@@ -3,6 +3,7 @@ import ContactYou from '@/shared/ContactYou/ContactYou'
 import React from 'react'
 import { VscArrowRight } from 'react-icons/vsc'
 import { useForm } from 'react-hook-form'
+import SelectAnswer from './SelectArswer'
 
 export const Order = () => {
 	const { register, handleSubmit } = useForm()
@@ -15,7 +16,7 @@ export const Order = () => {
 			<div className='bg-white lg:w-8/12'>
 				<ContactYou />
 				<form onSubmit={handleSubmit(submit)} className='px-2 pt-6 flex flex-col gap-6 lg:px-[116px]'>
-					<div>
+					{/* <div>
 						<label className='flex flex-col gap-2'>
 							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>
 								How large is your house to be?
@@ -26,7 +27,8 @@ export const Order = () => {
 								placeholder='Select answer'
 							/>
 						</label>
-					</div>
+					</div> */}
+					<SelectAnswer data regist />
 					<div className='flex flex-col gap-2 '>
 						<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>
 							Do you have your own plot of land?
@@ -122,17 +124,22 @@ export const Order = () => {
 							/>
 						</label>
 					</div>
-					<div>
+					{/* <INPUT label='email' placeholder='' registe={register} fieldNaem='email' />
+					<INPUT label='password' placeholder='' registe={register} fieldNaem='password' />
+					<INPUT label='name' placeholder='' registe={register} fieldNaem='password' />
+					<INPUT label='price' placeholder='' registe={register} fieldNaem='password' />
+					<INPUT label='password' placeholder='' registe={register} fieldNaem='password' /> */}
+					{/* <div>
 						<label className='flex flex-col gap-2'>
-							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>Phone number</span>
+							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>{label}</span>
 							<input
-								{...register('phone')}
+								// {...register(fieldName)}
 								className='border border-solid border-[#EBE9E6] py-4 px-4'
 								type='text'
-								placeholder='Please enter your phone number'
+								placeholder={placeholder}
 							/>
 						</label>
-					</div>
+					</div> */}
 					<div>
 						<label className='flex flex-col gap-2'>
 							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>Email address</span>

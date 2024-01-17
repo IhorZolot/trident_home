@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 
-const SelectAnswer = ({ onSelect }) => {
+const SelectAnswer = ({ onSelect, register }) => {
 	const [selectedAnswer, setSelectedAnswer] = useState('')
 
 	const handleSelectChange = event => {

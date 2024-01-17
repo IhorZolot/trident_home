@@ -82,7 +82,7 @@ const Sprite = ({ name }) => {
 						stroke-linejoin='round'
 						stroke-linecap='round'
 						stroke-miterlimit='10'
-						stroke-width='37.7788'
+						strokeWidth='37.7788'
 						d='M875.394 206.22c78.114 84.786 125.826 198.015 125.826 322.39 0 262.847-213.081 475.924-475.924 475.924-262.848 0-475.928-213.077-475.928-475.924s213.080-475.926 475.928-475.926c19.644 0 39.011 1.191 58.033 3.503'
 					></path>
 					<path
@@ -91,7 +91,7 @@ const Sprite = ({ name }) => {
 						stroke-linejoin='round'
 						stroke-linecap='round'
 						stroke-miterlimit='10'
-						stroke-width='37.7788'
+						strokeWidth='37.7788'
 						d='M338.934 232.333c135.201-85.219 316.033-68.945 433.807 48.828 136.656 136.658 136.656 358.221 0 494.877-136.656 136.66-358.223 136.66-494.881 0-117.947-117.944-134.096-299.138-48.449-434.401'
 					></path>
 					<path
@@ -100,7 +100,7 @@ const Sprite = ({ name }) => {
 						stroke-linejoin='round'
 						stroke-linecap='round'
 						stroke-miterlimit='10'
-						stroke-width='37.7788'
+						strokeWidth='37.7788'
 						d='M871.967 276.933v-73.467h73.465'
 					></path>
 					<path
@@ -109,7 +109,7 @@ const Sprite = ({ name }) => {
 						stroke-linejoin='round'
 						stroke-linecap='round'
 						stroke-miterlimit='10'
-						stroke-width='37.7788'
+						strokeWidth='37.7788'
 						d='M478.034 528.596c0 26.105 21.163 47.271 47.268 47.271 26.109 0 47.271-21.166 47.271-47.271s-21.163-47.268-47.271-47.268c-26.105 0-47.268 21.163-47.268 47.268z'
 					></path>
 					<path
@@ -118,7 +118,7 @@ const Sprite = ({ name }) => {
 						stroke-linejoin='round'
 						stroke-linecap='round'
 						stroke-miterlimit='10'
-						stroke-width='37.7788'
+						strokeWidth='37.7788'
 						d='M800.543 528.934h-23.842'
 					></path>
 					<path
@@ -127,7 +127,7 @@ const Sprite = ({ name }) => {
 						stroke-linejoin='round'
 						stroke-linecap='round'
 						stroke-miterlimit='10'
-						stroke-width='37.7788'
+						strokeWidth='37.7788'
 						d='M250.1 528.268h23.844'
 					></path>
 					<path
@@ -136,7 +136,7 @@ const Sprite = ({ name }) => {
 						stroke-linejoin='round'
 						stroke-linecap='round'
 						stroke-miterlimit='10'
-						stroke-width='37.7788'
+						strokeWidth='37.7788'
 						d='M525.568 253.489v23.844'
 					></path>
 					<path
@@ -145,7 +145,7 @@ const Sprite = ({ name }) => {
 						stroke-linejoin='round'
 						stroke-linecap='round'
 						stroke-miterlimit='10'
-						stroke-width='37.7788'
+						strokeWidth='37.7788'
 						d='M525.032 803.734v-23.846'
 					></path>
 					<path
@@ -154,7 +154,7 @@ const Sprite = ({ name }) => {
 						stroke-linejoin='round'
 						stroke-linecap='round'
 						stroke-miterlimit='10'
-						stroke-width='37.7788'
+						strokeWidth='37.7788'
 						d='M491.855 495.2l-77.155-77.152'
 					></path>
 					<path
@@ -163,7 +163,7 @@ const Sprite = ({ name }) => {
 						stroke-linejoin='round'
 						stroke-linecap='round'
 						stroke-miterlimit='10'
-						stroke-width='37.7788'
+						strokeWidth='37.7788'
 						d='M558.701 495.2l143.834-143.834'
 					></path>
 				</svg>

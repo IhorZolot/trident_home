@@ -1,17 +1,19 @@
 'use client'
 import navLinks from '@/shared/Data/nav-links'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Header } from '../header/Header'
 import { usePathname } from 'next/navigation'
 
-const MobileMenu = () => {
+const MobileMenu = ({ close }) => {
 	const activeLink = usePathname()
+
 	return (
 		<div className=' '>
 			<ul className='flex flex-col gap-8 justify-center items-center '>
 				{navLinks.map(item => (
 					<li
+						onClick={close}
 						className={` ${activeLink === item.src ? ' border-b-2 border-b-yellow-500 ' : ' '} w-full text-center`}
 						key={item.title}
 					>
