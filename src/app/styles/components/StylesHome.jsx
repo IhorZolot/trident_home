@@ -6,7 +6,7 @@ import { stylesArr } from '@/shared/Data/styles-home-data'
 const StylesHome = () => {
 	return (
 		<Container>
-			<div className='mb-12'>
+			<div className='mb-12 lg:pt-12'>
 				<div className='lg:flex gap-8'>
 					<hi className='text-[#00204A] text-[26px] block font-medium leading-[45px] mb-6'>Styles</hi>
 					<div className='flex gap-2 mb-8'>

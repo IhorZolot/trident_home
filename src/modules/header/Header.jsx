@@ -16,7 +16,7 @@ export const Header = () => {
 	return (
 		<>
 			<div className='flex py-4 px-8 space-y-1 w-full  justify-between relative'>
-				<div className='hidden lg:flex lg:bg-yellow-400 lg:w-[125px] lg:h-[125px] lg:text-[13px] uppercase lg:absolute lg:right-[36px] justify-center items-center '>
+				<div className='hidden lg:flex lg:bg-yellow-400 lg:w-[125px] lg:h-[125px] lg:text-[13px] uppercase lg:absolute lg:right-[36px] lg:justify-center lg:items-center lg:z-20 '>
 					<a href='/order' className='w-[78px]'>
 						<span className='font-bold'>Order</span> Catalogue
 					</a>

@@ -11,10 +11,10 @@ const Gallery = () => {
 	})
 	return (
 		<Container>
-			<div className='mb-12'>
-				<div className='lg:flex gap-8'>
-					<hi className='text-[#00204A] text-[26px] block font-medium leading-[45px] mb-6'>Gallery</hi>
-					<div className='flex gap-2 mb-8'>
+			<div className='mb-12 lg:pt-20'>
+				<div className='lg:flex gap-12'>
+					<hi className='text-[#00204A] text-[26px] block font-medium leading-[45px] mb-6 lg:text-[46px]'>Gallery</hi>
+					<div className='flex gap-4 mb-8'>
 						<button className='px-6 py-2 border border-solid border-r-[16px] border-[#F4D059]'>Choose model</button>
 						<button className='px-6 py-2 border border-solid border-r-8 border-[#F4D059]'>Choose interior</button>
 					</div>

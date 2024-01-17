@@ -7,7 +7,7 @@ import Container from '@/shared/Container/Container'
 export const AboutUs = () => {
 	return (
 		<Container>
-			<div className='lg:flex justify-between gap-8 lg:mb-12 '>
+			<div className='lg:flex lg:justify-between lg:gap-8 lg:mb-12 lg:pt-[90px] '>
 				<div className='mb-12 text-[#00204A] lg:mb-0'>
 					<h1 className='text-[26px] font-medium leading-[45px] mb-4 lg:text-[46px] lg:font-normal'>About us</h1>
 					<p className='w-full text-[26px] font-light leading-[29.8px] mb-6 lg:w-[595px] lg:text-4xl lg:leading-[45px]'>
