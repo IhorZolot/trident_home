@@ -1,9 +1,16 @@
 'use client'
-import ContactYou from '@/shared/ContactYou/ContactYou'
+
 import React from 'react'
 import { VscArrowRight } from 'react-icons/vsc'
 import { useForm } from 'react-hook-form'
-import SelectAnswer from './SelectArswer'
+
+import ContactYou from '@/shared/ContactYou/ContactYou'
+import InputSelect from '@/shared/InputFields/InputSelect'
+import RadioButton from '@/shared/InputFields/RadioButton'
+import Checkbox from '@/shared/InputFields/Checkbox'
+import {Input} from '@/shared/InputFields/Input'
+
+import { selectCost, selectOurFind, selectSize, selectTimeBuild } from '@/shared/Data/InputData/select-data'
 
 export const Order = () => {
 	const { register, handleSubmit } = useForm()
@@ -16,159 +23,21 @@ export const Order = () => {
 			<div className='bg-white lg:w-8/12'>
 				<ContactYou />
 				<form onSubmit={handleSubmit(submit)} className='px-2 pt-6 flex flex-col gap-6 lg:px-[116px]'>
-					{/* <div>
-						<label className='flex flex-col gap-2'>
-							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>
-								How large is your house to be?
-							</span>
-							<input
-								className='border border-solid border-[#EBE9E6] py-4 px-4 placeholder-neutral-400'
-								type='text'
-								placeholder='Select answer'
-							/>
-						</label>
-					</div> */}
-					<SelectAnswer data regist />
-					<div className='flex flex-col gap-2 '>
-						<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>
-							Do you have your own plot of land?
-						</span>
-						<label className='flex gap-2 items-center'>
-							<input className='border rounded-[11px] border-solid border-[#EBE9E6]' type='radio' name='land' />
-							<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>yes</span>
-							<input className='border rounded-[11px] border-solid border-[#EBE9E6]' type='radio' name='land' />
-							<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>no</span>
-						</label>
-					</div>
-					<div>
-						<label className='flex flex-col gap-2'>
-							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>
-								When do you expect the build to take place?
-							</span>
-							<input
-								className='border border-solid border-[#EBE9E6] py-4 px-4'
-								type='text'
-								placeholder='Select answer'
-							/>
-						</label>
-					</div>
-					<div>
-						<label className='flex flex-col gap-2'>
-							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>
-								How much do you expect to invest in the build?
-							</span>
-							<input
-								className='border border-solid border-[#EBE9E6] py-4 px-4'
-								type='text'
-								placeholder='Select answer'
-							/>
-						</label>
-					</div>
-					<div>
-						<label className='flex flex-col gap-2'>
-							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>
-								How did you find out about us?
-							</span>
-							<input
-								className='border border-solid border-[#EBE9E6] py-4 px-4'
-								type='text'
-								placeholder='Select answer'
-							/>
-						</label>
-					</div>
-					<div>
-						<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>
-							Do you have architect`s drawings?
-						</span>
-						<label className='flex gap-2 items-center'>
-							<input className='border rounded-[11px] border-solid border-[#EBE9E6]' type='radio' name='land' />
-							<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>yes</span>
-							<input
-								className='shrink-0 border rounded-[11px] border-solid border-[#EBE9E6]'
-								type='radio'
-								name='land'
-							/>
-							<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>no</span>
-						</label>
-					</div>
-					<div>
-						<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>
-							Do you have planning permission?
-						</span>
-						<label className='flex gap-2 items-center'>
-							<input className='border rounded-[11px] border-solid border-[#EBE9E6]' type='radio' name='land' />
-							<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>yes</span>
-							<input className='border rounded-[11px] border-solid border-[#EBE9E6]' type='radio' name='land' />
-							<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>no</span>
-						</label>
-					</div>
-					<div>
-						<label className='flex flex-col gap-2'>
-							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>Name and surname</span>
-							<input
-								{...register('name')}
-								className='border border-solid border-[#EBE9E6] py-4 px-4'
-								type='text'
-								placeholder='Please enter your name and surname'
-							/>
-						</label>
-					</div>
-					<div>
-						<label className='flex flex-col gap-2'>
-							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>City</span>
-							<input
-								{...register('city')}
-								className='border border-solid border-[#EBE9E6] py-4 px-4'
-								type='text'
-								placeholder='Enter city name'
-							/>
-						</label>
-					</div>
-					{/* <INPUT label='email' placeholder='' registe={register} fieldNaem='email' />
-					<INPUT label='password' placeholder='' registe={register} fieldNaem='password' />
-					<INPUT label='name' placeholder='' registe={register} fieldNaem='password' />
-					<INPUT label='price' placeholder='' registe={register} fieldNaem='password' />
-					<INPUT label='password' placeholder='' registe={register} fieldNaem='password' /> */}
-					{/* <div>
-						<label className='flex flex-col gap-2'>
-							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>{label}</span>
-							<input
-								// {...register(fieldName)}
-								className='border border-solid border-[#EBE9E6] py-4 px-4'
-								type='text'
-								placeholder={placeholder}
-							/>
-						</label>
-					</div> */}
-					<div>
-						<label className='flex flex-col gap-2'>
-							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>Email address</span>
-							<input
-								{...register('email')}
-								className='border border-solid border-[#EBE9E6] py-4 px-4'
-								type='text'
-								placeholder='Please enter your email address'
-							/>
-						</label>
-					</div>
-					<div>
-						<label className='flex gap-2'>
-							<input {...register('agree')} type='checkbox' />
-							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>
-								I agree that TRIDENT can contact me to send me the Catalogue of houses.
-							</span>
-						</label>
-					</div>
-					<div>
-						<label className='flex gap-2'>
-							<input {...register('rules')} type='checkbox' />
-							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>
-								I wish to receive information about open house events, other materials relevant to my interests and news
-								via Newsletter from TRIDENT
-							</span>
-						</label>
-					</div>
-					<p>
+
+					<InputSelect title='How large is your house to be?' options={selectSize}/>
+					<InputSelect title='When do you expect the build to take place?' options={selectTimeBuild}/>
+					<InputSelect title='How much do you expect to invest in the build?' options={selectCost}/>
+					<InputSelect title='How did you find out about us?' options={selectOurFind}/>
+					<RadioButton title='Do you have architect`s drawings?' type='architectDrawings'/>
+					<RadioButton title='Do you have planning permission?' type='planningPermission' />
+					<Input title='Name and surname' label='name' placeholder='Please enter your name and surname' register={register}  fieldNaem='name'/>
+					<Input title='City' label='city'  placeholder='Enter city name' register={register}  fieldNaem='city'/>
+					<Input title='Phone number' label='phone' placeholder='Please enter your phone number' register={register}  fieldNaem='phone'/>
+					<Input title='Email address' label='email' placeholder='Please enter your email address' register={register}  fieldNaem='email'/>
+					<Checkbox label='agree' register={register}  fieldNaem='agree' text='I agree that TRIDENT can contact me to send me the Catalogue of houses.'/>
+					<Checkbox label='rules' register={register}  fieldNaem='rules' text='I wish to receive information about open house events, other materials relevant to my interests and news
+								via Newsletter from TRIDENT'/>
+					<p className='w-full text-[12px] leading-[13.33px] px-6'>
 						Your consent may be revoked at any time by sending an e-mail to dpo@danwood.pl, with the consequence of the
 						erasure of your contact details from the distribution of our materials.
 					</p>
