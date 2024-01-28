@@ -6,6 +6,8 @@ import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { VscArrowRight } from 'react-icons/vsc'
 import ContactYou from '@/shared/ContactYou/ContactYou'
+import { Input } from '@/shared/InputFields/Input'
+import Checkbox from '@/shared/InputFields/Checkbox'
 
 const ContactForm = () => {
 	const requestSchema = z.object({
@@ -31,73 +33,31 @@ const ContactForm = () => {
 		<div className='lg:flex justify-center bg-[#F5F5F5] lg:pb-[110px]'>
 			<div className=' bg-white lg:w-8/12 '>
 				<ContactYou />
-				<form onSubmit={handleSubmit(submit)} className='px-2 pt-6 flex flex-col gap-6'>
-					<div>
-						<label className='flex flex-col gap-2'>
-							<span className='text-[11px] font-normal leading-[13px] uppercase '>Your name</span>
-							<input
-								{...register('name', { required: true, minLength: 3 })}
-								type='text'
-								placeholder='Name'
-								className='border border-solid border-[#EBE9E6]  px-4 py-4'
-							/>
-						</label>
-						{errors.name && <p className='text-red-500'>{errors.name.message}</p>}
-					</div>
-					<div>
-						<label className='flex flex-col gap-2'>
-							<span className='text-[11px] font-normal leading-[13px] uppercase'>Your Phone</span>
-							<input
-								{...register('phone', { valueAsNumber: true })}
-								type='text'
-								placeholder='Phone'
-								className='border border-solid border-[#EBE9E6]  px-4 py-4'
-							/>
-						</label>
-						{errors.phone && <p className='text-red-500'>{errors.phone.message}</p>}
-					</div>
-					<div>
-						<label className='flex flex-col gap-2'>
-							<span className='text-[11px] font-normal leading-[13px] uppercase'>Your E-mail</span>
-							<input
-								{...register('email')}
-								type='text'
-								placeholder='E-mail'
-								className='border border-solid border-[#EBE9E6]  px-4 py-4'
-							/>
-						</label>
-						{errors.email && <p className='text-red-500'>{errors.email.message}</p>}
-					</div>
-					<div>
-						<label className='flex flex-col gap-2'>
-							<span className='text-[11px] font-normal leading-[13px] uppercase'>Your text</span>
-							<textarea
-								{...register('comment')}
-								type='text'
-								placeholder='Type massege'
-								className='border border-solid border-[#EBE9E6]  px-4 pt-4 pb-12'
-							/>
-						</label>
-						{errors.comment && <p className='text-red-500'>{errors.comment.message}</p>}
-					</div>
-					<div>
-						<label className='flex gap-3 items-center'>
-							<input {...register('agree')} type='checkbox' className=' border border-solid border-[#EBE9E6]' />
-							<span className='text-[10px] not-italic font-light leading-3'>
-								I agree that TRIDENT can contact me to send me the Catalogue of houses.
-							</span>
-						</label>
-					</div>
-					<div>
-						<label className='flex gap-3 items-center'>
-							<input {...register('rules')} type='checkbox' className=' border border-solid border-[#EBE9E6]' />
-							<span className='text-[10px] not-italic font-light leading-3  '>
-								I wish to receive information about open house events, other materials relevant to my interests and news
-								via Newsletter from TRIDENT
-							</span>
-						</label>
-					</div>
-					<p className=' w-[357px] text-[9px] mb-6 lg:w-[558.919px]'>
+				<form onSubmit={handleSubmit(submit)} className='px-2 pt-6 flex flex-col gap-6 lg:mx-[116px]'>
+					<Input label='Your name'
+					 placeholder='Name' 
+					 fieldName='name'
+					register={register}
+					style='border border-solid border-[#EBE9E6] py-4 px-4 '
+					custom={{required: true, minLength: 3}}
+					error={errors.name && errors.name.message}
+					/>
+					<Input label='Your Phone' placeholder='phone' fieldName='phone'  register={register} style='border border-solid border-[#EBE9E6] py-4 px-4'
+					custom={{ valueAsNumber: true }}
+					error={errors.phone && errors.phone.message}
+					/>
+					<Input label='Your E-mail' placeholder='email' fieldName='email'  register={register} style='border border-solid border-[#EBE9E6] py-4 px-4'
+					error={errors.email && errors.email.message}/>
+					<Input label='Your text' placeholder='Type message' fieldName='comment'  register={register} 
+					style='border border-solid border-[#EBE9E6]  px-4 pt-4 pb-12'
+					error={errors.comment && errors.comment.message}/>
+					<Checkbox  label='agree' register={register} fieldName='agree' custom={{required: true }}
+					error={errors.agree && errors.agree.message} 
+					style='text-[10px] font-light leading-3' text='I agree that TRIDENT can contact me to send me the Catalogue of houses.'/>
+					<Checkbox  label='rules' register={register}  fieldName='rules' 
+					style='text-[10px] font-light leading-3' text='I wish to receive information about open house events, other materials relevant to my interests and news
+					via Newsletter from TRIDENT'/>
+					<p className=' w-full mx-auto text-[9px] mb-6 lg:w-[559px text-center]'>
 						By submitting your information you confirm that you have read the Privacy Policy which contains instructions
 						regarding the right of access to your data, the possibility of rectifying it and the right to lodge a
 						complaint with a supervisory authority. Your consent may be revoked at any time by sending an e-mail to

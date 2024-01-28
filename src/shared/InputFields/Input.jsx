@@ -1,17 +1,18 @@
 import React from 'react'
 
-export const Input = ({ placeholder, fieldNaem, label, register }) => {
+export const Input = ({ placeholder, fieldName, label, register, custom, style, error }) => {
   return (
     <div>
 						<label className='flex flex-col gap-2'>
 							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>{label}</span>
 							<input
-								{...register(fieldNaem)}
-								className='border border-solid border-[#EBE9E6] py-4 px-4'
+								{...register(fieldName, custom)}
+								className= {style}
 								type='text'
 								placeholder={placeholder}
 							/>
 						</label>
+						{error && <p className='text-red-500'>{error}</p>}
 					</div>
   )
 }

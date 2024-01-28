@@ -1,11 +1,11 @@
 import React from 'react'
 
-const RadioButton = ({title, type}) => {
+const RadioButton = ({label, type}) => {
 	
   return (
     <div className='flex flex-col gap-2 '>
 						<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>
-            {title}
+            {label}
 						</span>
 						<label className='flex gap-2 items-center'>
         <input

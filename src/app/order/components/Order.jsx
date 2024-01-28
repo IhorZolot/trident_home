@@ -13,29 +13,33 @@ import {Input} from '@/shared/InputFields/Input'
 import { selectCost, selectOurFind, selectSize, selectTimeBuild } from '@/shared/Data/InputData/select-data'
 
 export const Order = () => {
-	const { register, handleSubmit } = useForm()
+	const { register, handleSubmit, reset } = useForm()
 	const submit = data => {
 		console.log(data)
+		reset()
 	}
-
 	return (
 		<div className='lg:flex justify-center bg-[#F5F5F5] pb-[110px]'>
 			<div className='bg-white lg:w-8/12'>
 				<ContactYou />
 				<form onSubmit={handleSubmit(submit)} className='px-2 pt-6 flex flex-col gap-6 lg:px-[116px]'>
 
-					<InputSelect title='How large is your house to be?' options={selectSize}/>
-					<InputSelect title='When do you expect the build to take place?' options={selectTimeBuild}/>
-					<InputSelect title='How much do you expect to invest in the build?' options={selectCost}/>
-					<InputSelect title='How did you find out about us?' options={selectOurFind}/>
-					<RadioButton title='Do you have architect`s drawings?' type='architectDrawings'/>
-					<RadioButton title='Do you have planning permission?' type='planningPermission' />
-					<Input title='Name and surname' label='name' placeholder='Please enter your name and surname' register={register}  fieldNaem='name'/>
-					<Input title='City' label='city'  placeholder='Enter city name' register={register}  fieldNaem='city'/>
-					<Input title='Phone number' label='phone' placeholder='Please enter your phone number' register={register}  fieldNaem='phone'/>
-					<Input title='Email address' label='email' placeholder='Please enter your email address' register={register}  fieldNaem='email'/>
-					<Checkbox label='agree' register={register}  fieldNaem='agree' text='I agree that TRIDENT can contact me to send me the Catalogue of houses.'/>
-					<Checkbox label='rules' register={register}  fieldNaem='rules' text='I wish to receive information about open house events, other materials relevant to my interests and news
+					<InputSelect label='How large is your house to be?' options={selectSize} fieldName='selectSize' register={register}/>
+					<InputSelect label='When do you expect the build to take place?' options={selectTimeBuild}/>
+					<InputSelect label='How much do you expect to invest in the build?' options={selectCost}/>
+					<InputSelect label='How did you find out about us?' options={selectOurFind}/>
+					<RadioButton label='Do you have architect`s drawings?' type='architectDrawings'/>
+					<RadioButton label='Do you have planning permission?' type='planningPermission' />
+					<Input label='Name and surname' placeholder='Please enter your name and surname' register={register}  fieldName='name'
+					style='border border-solid border-[#EBE9E6] py-4 px-4 placeholder-neutral-400 focus:outline-none focus:border-yellow-400'/>
+					<Input label='City'  placeholder='Enter city name' register={register}  fieldName='city' style='border border-solid border-[#EBE9E6] py-4 px-4 placeholder-neutral-400 focus:outline-none focus:border-yellow-400'/>
+					<Input label='Phone number'  placeholder='Please enter your phone number' register={register}  fieldName='phone' style='border border-solid border-[#EBE9E6] py-4 px-4 placeholder-neutral-400 focus:outline-none focus:border-yellow-400'/>
+					<Input label='Email address' placeholder='Please enter your email address' register={register}  fieldName='email' style='border border-solid border-[#EBE9E6] py-4 px-4 placeholder-neutral-400 focus:outline-none focus:border-yellow-400'/>
+					<Checkbox label='agree' register={register}  fieldName='agree' 
+					style='text-black text-[11px] font-normal leading-[13px] uppercase' text='I agree that TRIDENT can contact me to send me the Catalogue of houses.'/>
+					<Checkbox label='rules' register={register}  fieldName='rules'
+					style='text-black text-[11px] font-normal leading-[13px] uppercase'
+					 text='I wish to receive information about open house events, other materials relevant to my interests and news
 								via Newsletter from TRIDENT'/>
 					<p className='w-full text-[12px] leading-[13.33px] px-6'>
 						Your consent may be revoked at any time by sending an e-mail to dpo@danwood.pl, with the consequence of the

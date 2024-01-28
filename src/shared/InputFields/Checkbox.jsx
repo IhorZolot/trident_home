@@ -1,16 +1,18 @@
 import React from 'react'
 
-const Checkbox = ({text, fieldNaem, register}) => {
+const Checkbox = ({text, fieldName, register, label, style, custom, error}) => {
   return (
     <div>
 						<label className='flex gap-2'>
 							<input type='checkbox'
-              {...register(fieldNaem)} 
+							label={label}
+              {...register(fieldName, custom)}
                />
-							<span className='text-black text-[11px] font-normal leading-[13px] uppercase'>
+							<span className={style}>
 								{text}
 							</span>
 						</label>
+						{error && <p className='text-red-500'>{error}</p>}
 					</div>
   )
 }
