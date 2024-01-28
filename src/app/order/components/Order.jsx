@@ -25,9 +25,9 @@ export const Order = () => {
 				<form onSubmit={handleSubmit(submit)} className='px-2 pt-6 flex flex-col gap-6 lg:px-[116px]'>
 
 					<InputSelect label='How large is your house to be?' options={selectSize} fieldName='selectSize' register={register}/>
-					<InputSelect label='When do you expect the build to take place?' options={selectTimeBuild}/>
-					<InputSelect label='How much do you expect to invest in the build?' options={selectCost}/>
-					<InputSelect label='How did you find out about us?' options={selectOurFind}/>
+					<InputSelect label='When do you expect the build to take place?' options={selectTimeBuild}fieldName='selectTimeBuild' register={register}/>
+					<InputSelect label='How much do you expect to invest in the build?' options={selectCost} fieldName='selectCost' register={register}/>
+					<InputSelect label='How did you find out about us?' options={selectOurFind} fieldName='selectOurFind'register={register}/>
 					<RadioButton label='Do you have architect`s drawings?' type='architectDrawings'/>
 					<RadioButton label='Do you have planning permission?' type='planningPermission' />
 					<Input label='Name and surname' placeholder='Please enter your name and surname' register={register}  fieldName='name'
