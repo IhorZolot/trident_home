@@ -11,11 +11,11 @@ const SliderImage = ({images, custom }) => {
   return (
 						<div className={custom}>
 							<Image src={selectedImage} alt='Selected Image' className='mb-4 w-full' />
-							<ul className='flex gap-4 mb-8'>
+							<ul className='flex grid-col-3 gap-6 mb-8 px-2'>
 								{images.map((item, id) => (
-									<li key={id}>
+									<li key={id} className='flex-grow'>
 										<button className={`w-full ${selectedImage === item.img ? 'border-yellow-400 border-4' : ''}`} onClick={() => handleImageClick(item.img)}>
-											<Image src={item.img} alt='img' />
+											<Image src={item.img} alt='img'/>
 										</button>
 									</li>
 								))}

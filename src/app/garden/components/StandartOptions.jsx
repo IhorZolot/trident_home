@@ -5,7 +5,7 @@ const StandartOptions = () => {
 	return (
 		<div className='mb-6 lg:px-8'>
 			<h1 className='px-2 mb-6 text-[#00204A] text-[26px] font-light leading-[45px] lg:text-[46px] lg:mb-8'>
-				Standsrt Options
+				Standart Options
 			</h1>
 			<div className='flex gap-4 px-2 mb-8'>
 				<button className='bg-yellow-400 w-[145.775px] h-[46.067px]'>Basic Model</button>
@@ -13,7 +13,7 @@ const StandartOptions = () => {
 					Premium Model
 				</button>
 			</div>
-			<div className='flex flex-col items-center lg:flex-row lg:justify-between '>
+			<div className='flex flex-col items-left lg:flex-row lg:justify-between lg:items-center '>
 				<div>
 					<div className='flex items-end justify-between text-[#00204A] text-sm font-medium leading-[102.9%] border-b-2 border-solid border-black w-[375px] gap-6 px-2 lg:w-[600px] py-4'>
 						<p>Series</p>
