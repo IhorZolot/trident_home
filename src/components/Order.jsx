@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import { VscArrowRight } from 'react-icons/vsc'
 
 import Container from '../shared/Container/Container'
 import orderbook from '../../public/images/order/orderbook.png'
+import Button from '@/shared/Button/Button'
 
 const Order = () => {
 	return (
@@ -20,11 +20,12 @@ const Order = () => {
 				<div className='lg:flex items-start lg:pr-[48px]'>
 					<Image src={orderbook} alt='orderbook' />
 				</div>
-				<button className='bg-[#00204A] text-white px-6 py-3 lg:absolute left-16 bottom-8 '>
-					<a href='/order' className='flex gap-3 items-center '>
-						Order now <VscArrowRight className='text-white' />
-					</a>
-				</button>
+				<Button
+  styleButton='bg-[#00204A] text-white px-6 py-3 flex gap-4 items-center lg:absolute left-16 bottom-8 '
+  nameButton='Order now'
+  styleArrow='text-white'
+  href='/order'
+/>
 			</div>
 		</Container>
 	)

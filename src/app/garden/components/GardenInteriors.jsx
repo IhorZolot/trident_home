@@ -1,11 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 
-import { VscArrowRight } from 'react-icons/vsc'
-
 import image53 from './image/image53.png'
 import image54 from './image/image54.png'
 import image55 from './image/image55.png'
+import Button from '@/shared/Button/Button'
 
 
 const GardenInteriors = () => {
@@ -23,12 +22,12 @@ const GardenInteriors = () => {
 						<Image src={image54} alt='img' className='w-1/3' />
 						<Image src={image55} alt='img' className='w-1/3' />
 					</div>
-					<button className='bg-[#00204A] px-8 py-4 text-white text-xl font-light translate-y-8 '>
-						<a href='/styles' className='flex gap-3 items-center'>
-							See more photos
-							<VscArrowRight className='text-white' />
-						</a>
-					</button>
+					<Button
+  styleButton='bg-[#00204A] px-4 py-4 text-white text-xl font-light translate-y-8 lg:translate-x-[160px] flex gap-2 items-center max-w-[245px] '
+  nameButton='See more photos'
+  styleArrow='text-white'
+  href='/styles'
+/>
 				</div>
 				
 			</div>

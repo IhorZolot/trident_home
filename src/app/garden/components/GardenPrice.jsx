@@ -1,5 +1,5 @@
+import Button from '@/shared/Button/Button'
 import React from 'react'
-import { VscArrowRight } from 'react-icons/vsc'
 
 const GardenPrice = () => {
   return (
@@ -8,12 +8,11 @@ const GardenPrice = () => {
 					<span className='font-light'>Price:</span>
 					£152,000
 				</p>
-				<button className='bg-[#F4D059] py-3 px-7'>
-					<a href='/order' className='flex gap-3 items-center'>
-						Order now
-						<VscArrowRight />
-					</a>
-				</button>
+				<Button
+  styleButton='bg-[#F4D059] py-3 px-7 flex gap-4 items-center'
+  nameButton='Order now'
+  href='/order'
+/>
 			</div>
   )
 }

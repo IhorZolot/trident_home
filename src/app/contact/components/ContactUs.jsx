@@ -1,5 +1,5 @@
+import Button from '@/shared/Button/Button'
 import React from 'react'
-import { VscArrowRight } from 'react-icons/vsc'
 
 const ContactUs = () => {
 	return (
@@ -22,10 +22,12 @@ const ContactUs = () => {
 					<span>Email: hello@forpeop</span>
 					<span>Tel: +1-800-999-800</span>
 				</div>
-				<button className='bg-[#00204A] text-white py-3 px-4 flex items-center gap-3 max-w-[155px] lg:absolute bottom-0 left-0'>
-					<a href='tel:+380670670000'>Get request</a>
-					<VscArrowRight />
-				</button>
+				<Button
+  styleButton='bg-[#00204A] text-white py-3 px-4 flex items-center gap-3 max-w-[155px] lg:absolute bottom-0 left-0'
+  nameButton='Get request'
+  styleArrow='text-white'
+  href='tel:+380670670000'
+/>
 			</div>
 		</div>
 	)

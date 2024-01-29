@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import { VscArrowRight } from 'react-icons/vsc'
 
 import int11 from '../../public/images/interiors/int11.png'
 import int12 from '../../public/images/interiors/int12.png'
 
 import Container from '../shared/Container/Container'
+import Button from '@/shared/Button/Button'
 
 const Interiors = () => {
 	return (
@@ -26,11 +26,8 @@ const Interiors = () => {
 					<p className='text-white w-[273px] text-sm leading-[19px] pl-[28px] mb-[36px] lg:pl-[68px] lg:w-[380px]'>
 						Our architects have prepared some stunning ready-made interior designs...check them out...
 					</p>
-					<button className='px-8 py-3 bg-yellow-400 max-w-[180px] lg:translate-y-[61px] lg:translate-x-8'>
-						<a href='/interior' className='flex gap-3 items-center'>
-							Read more <VscArrowRight />
-						</a>
-					</button>
+					<Button styleButton='px-8 py-3 bg-yellow-400 max-w-[180px] flex gap-4 items-center lg:translate-y-[61px] lg:translate-x-8' nameButton='Read more'
+					href='/interior'/>
 				</div>
 			</div>
 		</Container>
