@@ -22,12 +22,9 @@ const GardenInteriors = () => {
 						<Image src={image54} alt='img' className='w-1/3' />
 						<Image src={image55} alt='img' className='w-1/3' />
 					</div>
-					<Button
-  styleButton='bg-[#00204A] px-4 py-4 text-white text-xl font-light translate-y-8 lg:translate-x-[160px] flex gap-2 items-center max-w-[245px] '
-  nameButton='See more photos'
+					<Button styleButton='bg-[#00204A] px-4 py-4 text-white text-xl font-light translate-y-8 lg:translate-x-[160px] flex gap-2 items-center max-w-[245px] '
   styleArrow='text-white'
-  href='/styles'
-/>
+  href='/styles'>See more photos</Button>
 				</div>
 				
 			</div>

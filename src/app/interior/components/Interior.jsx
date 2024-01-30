@@ -1,4 +1,5 @@
 'use client'
+import { SectionButton } from '@/shared/Button/SectionButton'
 import Container from '@/shared/Container/Container'
 import { interiorArr } from '@/shared/Data/interior-img-data'
 import SliderImage from '@/shared/SliderState/SliderState'
@@ -13,13 +14,13 @@ const Interior = () => {
 					<p className='text-[18px] font-light leading-[45px] mb-4 lg:text-[23px]'>You can choose a design that you like</p>
 				</div>
 				<div className='flex gap-4 mb-6'>
-					<button className='bg-[#F4D059] px-6 py-2 border border-solid border-r-[16px] border-[#F4D059]'>
+					<SectionButton styleButton>
 						STANDARD
-					</button>
-					<button className='px-6 py-2 border border-solid border-r-8 border-[#F4D059]'>MEDITERRANEAN</button>
-					<button className='hidden lg:block px-6 py-2 border border-solid border-r-8 border-[#F4D059]'>
+					</SectionButton>
+					<SectionButton>MEDITERRANEAN</SectionButton>
+					<SectionButton>
 						SCANDINAVIAN
-					</button>
+					</SectionButton>
 				</div>
 				<div className='lg:flex lg:flex-row-reverse gap-6'>
 					<div className='lg:flex justify-between gap-6'>

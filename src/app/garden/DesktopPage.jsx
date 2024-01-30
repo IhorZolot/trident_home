@@ -15,7 +15,7 @@ export const DesktopPage = () => {
   return (
     <div className='hidden lg:block'>
       <GardenRoom />
-    <div className='flex gap-4 justify-center'>
+    <div className='flex gap-4 justify-between '>
       <section className='grid'>
       <GardenPrice />
       <GardenInteriors />

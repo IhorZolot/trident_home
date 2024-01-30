@@ -6,7 +6,7 @@ import { FaYoutube } from "react-icons/fa";
 
 const FollowUs = () => {
 	return (
-		<ul className='flex gap-4'>
+		<ul className='flex gap-4 mb-12 lg:mb-2'>
 			<li>
 				<Link  className='hover:text-yellow-700' href='https://www.facebook.com/' target='_blank' rel='noopener noreferrer' aria-label='Facebook'>
     <FaFacebookF />

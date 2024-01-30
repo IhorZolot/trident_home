@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import image521 from './image/image521.png'
+import { SectionButton } from '@/shared/Button/SectionButton'
 const StandartOptions = () => {
 	return (
 		<div className='mb-6 lg:px-8'>
@@ -8,10 +9,10 @@ const StandartOptions = () => {
 				Standart Options
 			</h1>
 			<div className='flex gap-4 px-2 mb-8'>
-				<button className='bg-yellow-400 w-[145.775px] h-[46.067px]'>Basic Model</button>
-				<button className='w-[164.231px] h-[46.067px]  border border-solid border-r-8 border-[#F4D059]'>
+				<SectionButton styleButton>Basic Model</SectionButton>
+				<SectionButton>
 					Premium Model
-				</button>
+				</SectionButton>
 			</div>
 			<div className='flex flex-col items-left lg:flex-row lg:justify-between lg:items-center '>
 				<div>

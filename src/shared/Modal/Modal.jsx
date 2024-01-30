@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from 'react'
 
-const Modal = ({ children, close }) => {
+const Modal = ({ children, close, styleModal }) => {
 	const onBackdropClick = event => {
 		if (event.target === event.currentTarget) {
 			close()
@@ -25,9 +25,9 @@ const Modal = ({ children, close }) => {
 	return (
 		<div
 			onClick={onBackdropClick}
-			className='fixed inset-0 bg-[rgba(0,0,0,0.50)] z-1 backdrop-blur-md w-full h-full justify-center items-center'
+			className='fixed inset-0 bg-[rgba(0,0,0,0.50)] z-20 backdrop-blur-md w-full h-full justify-center items-center'
 		>
-			<div className='bg-white'>{children}</div>
+			<div>{children}</div>
 		</div>
 	)
 }

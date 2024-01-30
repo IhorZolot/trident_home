@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import { navLinksHouse } from '@/shared/Data/nav-links'
+import { navStyleHouse } from '@/shared/Data/nav-links'
 
-const FooterLinkHouse = () => {
+const FooterStyleHouse = () => {
 	return (
 		<ul className='hidden lg:flex flex-col gap-4'>
-			{navLinksHouse.map(item => (
+			{navStyleHouse.map(item => (
 				<li key={item}>
 					<Link href='/' className='text-white text-[15px] font-light leading-[18px]'>
 						{item}
@@ -16,4 +16,4 @@ const FooterLinkHouse = () => {
 	)
 }
 
-export default FooterLinkHouse
+export default FooterStyleHouse

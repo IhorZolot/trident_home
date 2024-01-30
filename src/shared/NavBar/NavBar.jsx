@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
-import navLinks from '../Data/nav-links'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { navLinks } from '../Data/nav-links'
 
 const NavBar = ({ classes }) => {
 	const activeLink = usePathname()

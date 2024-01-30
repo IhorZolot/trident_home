@@ -22,12 +22,9 @@ const ContactUs = () => {
 					<span>Email: hello@forpeop</span>
 					<span>Tel: +1-800-999-800</span>
 				</div>
-				<Button
-  styleButton='bg-[#00204A] text-white py-3 px-4 flex items-center gap-3 max-w-[155px] lg:absolute bottom-0 left-0'
-  nameButton='Get request'
+				<Button styleButton='bg-[#00204A] text-white py-3 px-4 flex items-center gap-3 max-w-[155px] lg:absolute bottom-0 left-0'
   styleArrow='text-white'
-  href='tel:+380670670000'
-/>
+  href='tel:+380670670000'>Get request</Button>
 			</div>
 		</div>
 	)
