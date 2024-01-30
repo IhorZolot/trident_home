@@ -13,9 +13,9 @@ const NavBar = ({ classes }) => {
 				<li key={item.title}>
 					<Link
 						href={item.src}
-						className={` ${
-							activeLink === item.src ? ' border-b-2 border-b-yellow ' : ' '
-						} hover:text-yellow-700 focus:outline-none`}
+						className={`${
+							activeLink === item.src ? ' border-b-2 border-b-yellow-500 ' : ' '
+						} hover:text-yellow-500 focus:outline-none`}
 					>
 						{item.title}
 					</Link>

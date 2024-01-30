@@ -20,12 +20,9 @@ const Order = () => {
 				<div className='lg:flex items-start lg:pr-[48px]'>
 					<Image src={orderbook} alt='orderbook' />
 				</div>
-				<Button
-  styleButton='bg-[#00204A] text-white px-6 py-3 flex gap-4 items-center lg:absolute left-16 bottom-8 '
-  nameButton='Order now'
+				<Button styleButton='bg-[#00204A] text-white px-6 py-3 flex gap-4 items-center lg:absolute left-16 bottom-8 '
   styleArrow='text-white'
-  href='/order'
-/>
+  href='/order'>Order now</Button>
 			</div>
 		</Container>
 	)

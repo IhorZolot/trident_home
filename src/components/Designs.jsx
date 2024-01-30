@@ -5,6 +5,7 @@ import React from 'react'
 import Container from '../shared/Container/Container'
 import { homeArr } from '@/shared/Data/home-image-data'
 import { Slider } from '@/shared/Slider/Slider'
+import { SectionButton } from '@/shared/Button/SectionButton'
 
 const Designs = () => {
 	return (
@@ -12,12 +13,12 @@ const Designs = () => {
 			<section>
 				<h1 className='text-[#00204A] block text-[26px] font-light leading-[45px] mb-6'>Our house designs</h1>
 				<div className='flex gap-2 mb-12 text-[15px] '>
-					<button className='bg-yellow-400 px-4 py-3 uppercase'>
-						<a href='/garden'>Garden rooms</a>
-					</button>
-					<button className='px-4 py-3 border border-solid border-r-8 border-[#F4D059] uppercase'>
-						Мodular houses
-					</button>
+					<SectionButton styleButton href='/garden'>
+					Garden rooms
+					</SectionButton>
+					<SectionButton href='/modular'>
+					Мodular houses
+					</SectionButton>
 				</div>
 			
 			<ul className='flex flex-col gap-6 mb-12 lg:hidden'>

@@ -4,10 +4,10 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { VscArrowRight } from 'react-icons/vsc'
 import ContactYou from '@/shared/ContactYou/ContactYou'
 import { Input } from '@/shared/InputFields/Input'
 import Checkbox from '@/shared/InputFields/Checkbox'
+import { FormButton } from '@/shared/Button/FormButton'
 
 const ContactForm = () => {
 	const requestSchema = z.object({
@@ -65,13 +65,7 @@ const ContactForm = () => {
 						materials.
 					</p>
 					<div className='flex justify-center '>
-						<button
-							type='submit'
-							className='flex bg-[#F4D059] justify-center items-center pl-[76px] pr-[77.733px] pt-[17px] pb-[18px] uppercase mb-6 max-w-[300px] gap-3'
-						>
-							Get request
-							<VscArrowRight />
-						</button>
+						<FormButton />
 					</div>
 				</form>
 				<a

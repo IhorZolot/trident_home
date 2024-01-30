@@ -22,11 +22,10 @@ const Invite = () => {
 			</p>
 			<Button
   styleButton='hidden bg-mainBlue lg:flex lg:gap-4 lg:items-center text-white lg:px-12 lg:py-4 lg:max-w-[210px]'
-  nameButton='Read more'
   styleArrow='text-white'
-  href='/catalog'
-/>
-		</section>
+  href='/catalog'> Read more
+	</Button>	
+	</section>
 	)
 }
 export default Invite

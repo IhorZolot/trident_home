@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import { VscArrowRight } from 'react-icons/vsc'
 import { useForm } from 'react-hook-form'
 
 import ContactYou from '@/shared/ContactYou/ContactYou'
@@ -11,6 +10,7 @@ import Checkbox from '@/shared/InputFields/Checkbox'
 import {Input} from '@/shared/InputFields/Input'
 
 import { selectCost, selectOurFind, selectSize, selectTimeBuild } from '@/shared/Data/InputData/select-data'
+import { FormButton } from '@/shared/Button/FormButton'
 
 export const Order = () => {
 	const { register, handleSubmit, reset } = useForm()
@@ -46,13 +46,7 @@ export const Order = () => {
 						erasure of your contact details from the distribution of our materials.
 					</p>
 					<div className='flex justify-center '>
-						<button
-							type='submit'
-							className='flex bg-[#F4D059] justify-center items-center pl-[76px] pr-[77.733px] pt-[17px] pb-[18px] uppercase mb-6 max-w-[300px] gap-3'
-						>
-							Get request
-							<VscArrowRight />
-						</button>
+					<FormButton />
 					</div>
 					<a
 						href='#'

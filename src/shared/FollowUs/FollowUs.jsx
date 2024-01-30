@@ -1,17 +1,26 @@
 import React from 'react'
-import Sprite from '../../../public/images/Sprite'
+import Link from 'next/link'
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 const FollowUs = () => {
 	return (
 		<ul className='flex gap-4'>
 			<li>
-				<Sprite name={'facebook'} />
+				<Link  className='hover:text-yellow-700' href='https://www.facebook.com/' target='_blank' rel='noopener noreferrer' aria-label='Facebook'>
+    <FaFacebookF />
+				</Link>
 			</li>
 			<li>
-				<Sprite name={'instagram'} />
+				<Link className='hover:text-yellow-700' href='https://www.instagram.com/' target='_blank' rel='noopener noreferrer' aria-label='Instagram'>
+				<FaInstagram />
+				</Link>
 			</li>
 			<li>
-				<Sprite name={'youtube'} />
+				<Link className='hover:text-yellow-700' href='https://www.youtube.com/' target='_blank' rel='noopener noreferrer' aria-label='Youtube'>
+				<FaYoutube />
+					</Link>
 			</li>
 		</ul>
 	)
