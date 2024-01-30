@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import Container from '@/shared/Container/Container'
-import { galleryArr } from '@/shared/Data/gallery-image-data'
+import { galleryArr } from '@/shared/Data/GalleryImgArray/gallery-image-data'
 import { SectionButton } from '@/shared/Button/SectionButton'
 
 const Gallery = () => {

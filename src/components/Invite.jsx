@@ -25,7 +25,7 @@ const Invite = () => {
   styleArrow='text-white'
   href='/catalog'> Read more
 	</Button>	
-	</section>
+		</section>
 	)
 }
 export default Invite

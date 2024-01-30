@@ -2,7 +2,7 @@
 import React from 'react'
 
 import Container from '../shared/Container/Container'
-import { seoArr, seoSmallArr } from '@/shared/Data/seo-img-data'
+import { seoArr, seoSmallArr } from '@/shared/Data/SeoArray/seo-img-data'
 import { Slider } from '@/shared/Slider/Slider'
 
 const Seo = () => {

@@ -1,7 +1,7 @@
 'use client'
 import { SectionButton } from '@/shared/Button/SectionButton'
 import Container from '@/shared/Container/Container'
-import { interiorArr } from '@/shared/Data/interior-img-data'
+import { interiorArr } from '@/shared/Data/InteriorImgArr/interior-img-data'
 import SliderImage from '@/shared/SliderState/SliderState'
 
 const Interior = () => {
@@ -23,12 +23,12 @@ const Interior = () => {
 					</SectionButton>
 				</div>
 				<div className='lg:flex lg:flex-row-reverse gap-6'>
-					<div className='lg:flex justify-between gap-6'>
+					<div className='lg:flex lg:justify-between gap-6 lg:w-1/2'>
 						<h1 className='text-[23px] font-light leading-[45px] mb-6 uppercase lg:hidden'>Standard</h1>
-						<SliderImage images={interiorArr} />
+						<SliderImage images={interiorArr}/>
 					</div>
 					<div className='text-[#00204A] flex flex-col gap-4 text-sm font-light leading-[22.486px] lg:top-[350px] lg:text-base lg:w-1/2'>
-						<h1 className='hidden lg:text-[23px] lg:font-light lg:leading-[45px] lg:mb-6 uppercase'>Standard</h1>
+						<h1 className='hidden lg:block lg:text-[23px] lg:font-light lg:leading-[45px] uppercase'>Standard</h1>
 						<p className='w-full'>
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
 							industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
