@@ -7,7 +7,6 @@ import Container from '@/shared/Container/Container'
 import { galleryArr } from '@/shared/Data/GalleryImgArray/gallery-image-data'
 import { SectionButton } from '@/shared/Button/SectionButton'
 import Modal from '@/shared/Modal/Modal'
-import { MdClose } from 'react-icons/md'
 
 const Gallery = () => {
 	const [selectedImage, setSelectedImage] = useState(null)
