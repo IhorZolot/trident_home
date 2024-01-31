@@ -1,10 +1,18 @@
 'use client'
+import { useState } from 'react'
+
 import { SectionButton } from '@/shared/Button/SectionButton'
 import Container from '@/shared/Container/Container'
 import { interiorArr } from '@/shared/Data/InteriorImgArr/interior-img-data'
 import SliderImage from '@/shared/SliderState/SliderState'
 
 const Interior = () => {
+	const [selectedStyle, setSelectedStyle] = useState('standard');
+
+	const handleStyleChange = (style) => {
+    setSelectedStyle(style);
+  };
+	const filteredImages = interiorArr.filter(item => item.style === selectedStyle);
 
 	return (
 		<Container>
@@ -14,18 +22,18 @@ const Interior = () => {
 					<p className='text-[18px] font-light leading-[45px] mb-4 lg:text-[23px]'>You can choose a design that you like</p>
 				</div>
 				<div className='flex gap-4 mb-6'>
-					<SectionButton styleButton>
+					<SectionButton styleButton onClick={() => setSelectedStyle('standard')}>
 						STANDARD
 					</SectionButton>
-					<SectionButton>MEDITERRANEAN</SectionButton>
-					<SectionButton>
+					<SectionButton onClick={() => setSelectedStyle('medi')}>MEDITERRANEAN</SectionButton>
+					<SectionButton onClick={() => setSelectedStyle('scan')}>
 						SCANDINAVIAN
 					</SectionButton>
 				</div>
 				<div className='lg:flex lg:flex-row-reverse gap-6'>
 					<div className='lg:flex lg:justify-between gap-6 lg:w-1/2'>
 						<h1 className='text-[23px] font-light leading-[45px] mb-6 uppercase lg:hidden'>Standard</h1>
-						<SliderImage images={interiorArr}/>
+						<SliderImage  images={filteredImages} selectedStyle={selectedStyle} handleStyleChange={handleStyleChange}/>
 					</div>
 					<div className='text-[#00204A] flex flex-col gap-4 text-sm font-light leading-[22.486px] lg:top-[350px] lg:text-base lg:w-1/2'>
 						<h1 className='hidden lg:block lg:text-[23px] lg:font-light lg:leading-[45px] uppercase'>Standard</h1>

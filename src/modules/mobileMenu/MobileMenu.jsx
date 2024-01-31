@@ -1,21 +1,21 @@
 'use client'
-import navLinks from '@/shared/Data/nav-links'
 import Link from 'next/link'
 import React from 'react'
 import { Header } from '../header/Header'
 import { usePathname } from 'next/navigation'
+import { navLinks } from '@/shared/Data/nav-links'
 
 const MobileMenu = ({ close }) => {
 	const activeLink = usePathname()
 
 	return (
-		<div className='bg-white '>
+		<div className='bg-white'>
 			<Header />
 			<ul className='flex flex-col gap-8 justify-center items-center pt-6 '>
 				{navLinks.map(item => (
 					<li
 						onClick={close}
-						className={` ${activeLink === item.src ? ' border-b-2 border-b-yellow-500 ' : ' '} w-full text-center`}
+						className={`${activeLink === item.src ? ' border-b-2 border-b-yellow-500 ' : ' '} w-full text-center`}
 						key={item.title}
 					>
 						<Link href={item.src} className={` hover:text-yellow-500 focus:outline-none`}>

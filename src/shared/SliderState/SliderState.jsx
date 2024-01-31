@@ -2,12 +2,13 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 
 
-const SliderImage = ({images, custom }) => {
+const SliderImage = ({ images, custom, selectedStyle, handleStyleChange }) => {
   const [selectedImage, setSelectedImage] = useState(images.length > 0 ? images[0].img : null)
 
-	const handleImageClick = imageSrc => {
-		setSelectedImage(imageSrc)
-	}
+	const handleImageClick = (imageSrc, style) => {
+    setSelectedImage(imageSrc);
+    handleStyleChange(style);
+  };
 	const displayedImages = images.slice(0, 3);
   return (
 						<div className={custom}>
@@ -19,7 +20,7 @@ const SliderImage = ({images, custom }) => {
 							<ul className='flex grid-col-3 gap-6 mb-8 px-2'>
 								{displayedImages.map((item, id) => (
 									<li key={id} className='flex-grow'>
-										<button className={`w-full ${selectedImage === item.img ? 'border-yellow-400 border-4' : ''}`} onClick={() => handleImageClick(item.img)}>
+										<button className={`w-full ${selectedImage === item.img ? 'border-yellow-400 border-4' : ''}`} onClick={() => handleImageClick(item.img, item.style)}>
 											<Image src={item.img} alt='img' 
 											 layout='intrinsic'
 											 className='aspect-square object-cover max-h-[100px] lg:max-h-[120px]'/>
