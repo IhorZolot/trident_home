@@ -32,7 +32,7 @@ export const Header = () => {
 				</button>
 			</div>
 			<Button
-				styleButton='bg-yellow-400 px-4 py-2 flex gap-6 justify-center items-center uppercase hover:text-yellow-700 lg:hidden'
+				styleButton='bg-yellow-400 px-4 py-2 flex gap-6 justify-center items-center uppercase hover:text-red-500 lg:hidden'
 				href='/order'
 			>
 				Order trident Catalogue
