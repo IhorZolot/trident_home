@@ -1,26 +1,22 @@
 'use client'
-import Image from 'next/image'
 import React from 'react'
+import Image from 'next/image'
 
-import Container from '../shared/Container/Container'
 import { homeArr } from '@/shared/Data/home-image-data'
 import { Slider } from '@/shared/Slider/Slider'
-import Button from '@/shared/Button/Button'
+import { SectionButton } from '@/shared/Button/SectionButton'
 
 const Designs = () => {
 	return (
-		<Container>
-			<section>
-				<h1 className='text-[#00204A] block text-[26px] font-light leading-[45px] mb-6'>Our house designs</h1>
-				<div className='flex gap-2 mb-12 text-[15px] '>
-					<Button styleButton='bg-yellow-400 px-4 py-3 flex gap-2 items-center uppercase' href='/garden'>
+		<section className='px-2 lg:px-8'>
+			<h1 className='text-[#00204A] block text-[26px] font-light leading-[45px] mb-6'>Our house designs</h1>
+			<div className='flex gap-2 mb-12 text-[15px] '>
+				<SectionButton styleButton href='/garden'>
 					Garden rooms
-					</Button>
-					<Button styleButton='px-4 py-3 flex gap-2 items-center border border-solid border-r-8 border-[#F4D059] uppercase' href='/modular'>
-					Мodular houses
-					</Button>
-				</div>
-			
+				</SectionButton>
+				<SectionButton href='/modular'>Мodular houses</SectionButton>
+			</div>
+
 			<ul className='flex flex-col gap-6 mb-12 lg:hidden'>
 				{homeArr.slice(0, 3).map(item => (
 					<li key={item.id}>
@@ -30,9 +26,8 @@ const Designs = () => {
 					</li>
 				))}
 			</ul>
-			<Slider data={homeArr} slidesPerView={3} custom='hidden lg:block lg:flex-row lg:gap-12 lg:mb-14'/>
-			</section>
-		</Container>
+			<Slider data={homeArr} slidesPerView={3} custom='hidden lg:block lg:flex-row lg:gap-12 lg:mb-14' />
+		</section>
 	)
 }
 export default Designs

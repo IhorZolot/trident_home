@@ -1,9 +1,15 @@
 import React from 'react'
 
-export const SectionButton = ({children, styleButton, href, type} ) => {
-  return (
-    <button className={styleButton ? 'bg-yellow-400 px-4 py-3 uppercase': 'px-4 py-3 border border-solid border-r-8 border-[#F4D059] uppercase' }>
-      {children}
-    </button>
-  )
+export const SectionButton = ({ children, styleButton }) => {
+	return (
+		<button
+			className={
+				styleButton
+					? 'bg-yellow-400 px-4 py-3 uppercase hover:bg-yellow-900 hover:text-white transition-transform duration-900transition-delay-500'
+					: 'px-4 py-3 border border-solid border-r-8 border-[#F4D059] uppercase hover:border-yellow-700 hover: hover:bg-yellow-700  hover:text-white transition-transform duration-900transition-delay-500'
+			}
+		>
+			{children}
+		</button>
+	)
 }

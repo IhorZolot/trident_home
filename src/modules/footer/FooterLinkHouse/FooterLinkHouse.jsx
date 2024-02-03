@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
+
 import { navLinksHouse } from '@/shared/Data/nav-links'
 
 const FooterLinkHouse = () => {
-	
 	return (
 		<ul className='hidden lg:flex flex-col gap-4'>
 			{navLinksHouse.map(item => (

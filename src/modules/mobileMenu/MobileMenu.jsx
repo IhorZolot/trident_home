@@ -1,7 +1,8 @@
 'use client'
-import Link from 'next/link'
 import React from 'react'
-import { Header } from '../header/Header'
+import Link from 'next/link'
+
+import { Header } from '../header/components/Header'
 import { usePathname } from 'next/navigation'
 import { navLinks } from '@/shared/Data/nav-links'
 

@@ -2,8 +2,6 @@ import React from 'react'
 import Modular from './components/Modular'
 
 const modular = () => {
-  return (
-    <div><Modular/></div>
-  )
+	return <Modular />
 }
 export default modular

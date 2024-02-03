@@ -6,12 +6,12 @@ import Quality from './components/Quality'
 
 const about = () => {
 	return (
-		<div>
+		<>
 			<AboutUs />
 			<Quality />
 			<Faq />
 			<Order />
-		</div>
+		</>
 	)
 }
 

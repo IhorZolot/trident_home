@@ -2,8 +2,8 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
-import { useModal } from '@/hooks/useModal'
 
+import { useModal } from '@/hooks/useModal'
 import Modal from '@/shared/Modal/Modal'
 import Container from '@/shared/Container/Container'
 import { SectionButton } from '@/shared/Button/SectionButton'
@@ -20,7 +20,6 @@ const Gallery = () => {
 		setSelectedImage(imageSrc)
 		openImage()
 	}
-
 	return (
 		<Container>
 			<div className='mb-12 lg:pt-20'>

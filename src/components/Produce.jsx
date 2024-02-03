@@ -1,8 +1,8 @@
 import React from 'react'
-import Sprite from '../../public/images/Sprite'
 import Container from '../shared/Container/Container'
 import Image from 'next/image'
 import produce1 from '../../public/images/produce1.png'
+import { qualityArr } from '@/shared/Data/quality-data'
 
 const Produce = () => {
 	return (
@@ -14,54 +14,17 @@ const Produce = () => {
 						as temporary as well as permanent residence.
 					</span>
 					<ul className='grid grid-cols-1 gap-4 lg:grid lg:grid-cols-2 lg:gap-16'>
-						<li>
-							<div className='flex gap-2 items-center '>
-								<Sprite name={'icon'} />
-								<h3 className='w-[165px] text-[#00204A] text-xs font-bold leading-[normal] tracking-[3.6px] uppercase'>
-									quality
-								</h3>
-							</div>
-							<p className='block w-[210px] text-[#00204A] text-sm font-light ml-12'>
-								A quality flexible modular housing solutionset nd they can be used as temporary as well as permanent
-								residence.
-							</p>
-						</li>
-						<li>
-							<div className=' flex gap-2 items-center '>
-								<Sprite name={'icon'} />
-								<h3 className='w-[165px] text-[#00204A] text-xs font-bold leading-[normal] tracking-[3.6px] uppercase'>
-									design
-								</h3>
-							</div>
-							<p className='block w-[210px] text-[#00204A] text-sm font-light ml-12'>
-								A quality flexible modular housing solutionset nd they can be used as temporary as well as permanent
-								residence.
-							</p>
-						</li>
-						<li>
-							<div className=' flex gap-2 items-center '>
-								<Sprite name={'icon'} />
-								<h3 className='w-[165px] text-[#00204A] text-xs font-bold leading-[normal] tracking-[3.6px] uppercase'>
-									price
-								</h3>
-							</div>
-							<p className='block w-[210px] text-[#00204A] text-sm font-light ml-12'>
-								A quality flexible modular housing solutionset nd they can be used as temporary as well as permanent
-								residence.
-							</p>
-						</li>
-						<li>
-							<div className=' flex gap-2 items-center '>
-								<Sprite name={'icon'} />
-								<h3 className='w-[165px] text-[#00204A] text-xs font-bold leading-[normal] tracking-[3.6px] uppercase'>
-									choice
-								</h3>
-							</div>
-							<p className='block w-[210.291px] text-[#00204A] text-sm font-light ml-12'>
-								A quality flexible modular housing solutionset nd they can be used as temporary as well as permanent
-								residence.
-							</p>
-						</li>
+						{qualityArr.map(item => (
+							<li key={item.title}>
+								<div className='flex gap-2 items-center'>
+									{item.icon}
+									<h3 className='w-[165px] text-[#00204A] text-xs font-bold leading-[normal] tracking-[3.6px] uppercase'>
+										{item.title}
+									</h3>
+								</div>
+								<p className='block w-[210px] text-[#00204A] text-sm font-light ml-12'>{item.text}</p>
+							</li>
+						))}
 					</ul>
 				</div>
 				<div className='hidden lg:block'>

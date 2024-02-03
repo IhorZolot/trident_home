@@ -1,24 +1,25 @@
 'use client'
-import FollowUs from '@/shared/FollowUs/FollowUs'
 import React from 'react'
+import { IoCloseSharp } from 'react-icons/io5'
+
+import { useModal } from '@/hooks/useModal'
 import { MdPhoneInTalk } from 'react-icons/md'
 import { PiMapPinLight } from 'react-icons/pi'
 import { LuMail } from 'react-icons/lu'
+import { privacyPolicy } from '@/shared/Data/polisi-data'
+import FollowUs from '@/shared/FollowUs/FollowUs'
 import FooterLink from './FooterLink/FooterLink'
 import FooterLinkHouse from './FooterLinkHouse/FooterLinkHouse'
 import Logo from '@/shared/Logo/Logo'
-import { useModal } from '@/hooks/useModal'
 import Modal from '@/shared/Modal/Modal'
-import { privacyPolicy } from '@/shared/Data/polisi-data'
-import { IoCloseSharp } from 'react-icons/io5'
 import FooterStyleHouse from './FooterStyleHouse/FooterStyleHouse'
 
-const Footer = ({ close }) => {
+const Footer = () => {
 	const [isPrivacyOpen, openPrivacy, closePrivacy] = useModal()
 	return (
 		<div className='bg-[#00204A]  text-white py-6 px-6'>
 			<div className='lg:grid grid-cols-4 w-full gap-12 mb-12'>
-				<div className='flex flex-col gap-3 mb-8 text-white text-[15px] not-italic font-light leading-[18px]'>
+				<div className='flex flex-col gap-3 mb-8 text-[15px] not-italic font-light leading-[18px]'>
 					<div className='mb-8'>
 						<Logo />
 					</div>
@@ -45,23 +46,23 @@ const Footer = ({ close }) => {
 			</div>
 			<div className='lg:flex justify-between lg:flex-row-reverse'>
 				<FollowUs className='mb-8' />
-				<div className='flex gap-12 lg:items-center  '>
+				<div className='flex gap-12 lg:items-center'>
 					<span className='text-[rgba(255,255,255,0.65)] text-xs font-light leading-[15px] hover:text-yellow-500'>
 						© Trident 2023
 					</span>
-					<button
+					<a
 						onClick={openPrivacy}
 						className='text-[rgba(255,255,255,0.65)] text-xs font-light leading-[15px] hover:text-yellow-500'
 					>
 						Privacy Policy
-					</button>
+					</a>
 				</div>
 			</div>
 			{isPrivacyOpen && (
 				<Modal close={closePrivacy}>
 					<div className='w-[60%] absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 mx-auto my-auto border rounded-lg p-6'>
 						<IoCloseSharp onClick={closePrivacy} className='absolute right-4 top-4 cursor-pointer' />
-						<h1 className='mb-4 text-lg'>Privacy Policy</h1>
+						<h1 className='mb-4 text-lg text'>Privacy Policy</h1>
 						{privacyPolicy}
 					</div>
 				</Modal>

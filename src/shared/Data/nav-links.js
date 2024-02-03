@@ -1,13 +1,13 @@
 // navLinks.js
-export  const navLinks = [
+export const navLinks = [
 	{ title: 'Home', src: '/' },
 	{ title: 'About Us', src: '/about' },
 	{ title: 'Gallery', src: '/gallery' },
+	{ title: 'Catalog', src: '/catalog' },
 	{ title: 'Styles', src: '/styles' },
 	{ title: 'Interior', src: '/interior' },
 	{ title: 'Contact', src: '/contact' },
-];
-
+]
 
 // navLinksHouse.js
 export const navLinksHouse = [
@@ -17,7 +17,7 @@ export const navLinksHouse = [
 	'Lake House',
 	'Forest House',
 	'Barn House',
-];
+]
 
 //navStyleHouse.js
 export const navStyleHouse = [
@@ -27,4 +27,4 @@ export const navStyleHouse = [
 	'Lake Style',
 	'Forest Style',
 	'Barn Style',
-];
+]
