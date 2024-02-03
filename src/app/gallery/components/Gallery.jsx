@@ -49,7 +49,7 @@ const Gallery = () => {
 						<Image
 							src={selectedImage}
 							alt='Large Image'
-							className='w-full object-center object-cover'
+							className='w-[900px] object-center object-cover'
 							onClick={closeImage}
 						/>
 					</div>

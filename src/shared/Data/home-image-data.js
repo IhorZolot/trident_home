@@ -42,4 +42,40 @@ export const homeArr = [
 		title: 'Garden Room',
 		desc: 'A room where you can work, study, and design',
 	},
+	{
+		id: '7',
+		img: home1,
+		title: 'Garden Room',
+		desc: 'A room where you can work, study, and design',
+	},
+	{
+		id: '8',
+		img: home2,
+		title: 'Garden Room',
+		desc: 'A room where you can work, study, and design',
+	},
+	{
+		id: '9',
+		img: home3,
+		title: 'Garden Room',
+		desc: 'A room where you can work, study, and design',
+	},
+	{
+		id: '10',
+		img: home4,
+		title: 'Garden Room',
+		desc: 'A room where you can work, study, and design',
+	},
+	{
+		id: '11',
+		img: home5,
+		title: 'Garden Room',
+		desc: 'A room where you can work, study, and design',
+	},
+	{
+		id: '12',
+		img: home6,
+		title: 'Garden Room',
+		desc: 'A room where you can work, study, and design',
+	},
 ]

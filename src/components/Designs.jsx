@@ -11,10 +11,12 @@ const Designs = () => {
 		<section className='px-2 lg:px-8'>
 			<h1 className='text-[#00204A] block text-[26px] font-light leading-[45px] mb-6'>Our house designs</h1>
 			<div className='flex gap-2 mb-12 text-[15px] '>
-				<SectionButton styleButton href='/garden'>
-					Garden rooms
+				<SectionButton styleButton>
+					<a href='/garden'>Garden rooms</a>
 				</SectionButton>
-				<SectionButton href='/modular'>Мodular houses</SectionButton>
+				<SectionButton>
+					<a href='/modular'> Мodular houses</a>
+				</SectionButton>
 			</div>
 
 			<ul className='flex flex-col gap-6 mb-12 lg:hidden'>

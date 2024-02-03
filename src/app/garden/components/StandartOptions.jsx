@@ -9,9 +9,11 @@ const StandartOptions = () => {
 				Standart Options
 			</h1>
 			<div className='flex gap-4 px-2 mb-8'>
-				<SectionButton styleButton>Basic Model</SectionButton>
+				<SectionButton styleButton>
+					<a href='/modular'>Basic Model</a>
+				</SectionButton>
 				<SectionButton>
-					Premium Model
+					<a href='/modular'>Premium Model</a>
 				</SectionButton>
 			</div>
 			<div className='flex flex-col items-left lg:flex-row lg:justify-between lg:items-center '>

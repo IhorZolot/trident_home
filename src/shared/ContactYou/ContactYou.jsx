@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactYou = () => {
 	return (
-		<div className='bg-yellow-400 px-3 py-6 flex flex-col text-center gap-3 lg:px-[90px] lg:py-[30px] mx-auto lg:-translate-y-20'>
+		<div className='bg-yellow-400 px-3 py-6 flex flex-col text-center gap-3 lg:px-[90px] lg:py-[10px] mx-auto lg:-translate-y-20'>
 			<h1 className=' text-[#00204A] text-[26px] font-medium font-Lato  lg:uppercase'>
 				Leave a request and we will contact you
 			</h1>

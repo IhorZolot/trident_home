@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image'
+
 import Container from '@/shared/Container/Container'
 import { stylesArr } from '@/shared/Data/styles-home-data'
 import { SectionButton } from '@/shared/Button/SectionButton'
@@ -31,9 +32,8 @@ const StylesHome = () => {
 							<Image
 								src={item.img}
 								alt='img'
-								width='100%'
 								layout='intrinsic'
-								className='w-[100%] aspect-square object-cover'
+								className='w-[100%] aspect-square object-cover cursor-pointer hover:scale-105'
 								onClick={() => handleImageClick(item.img)}
 							/>
 						</li>
@@ -43,7 +43,12 @@ const StylesHome = () => {
 			{isImageOpen && (
 				<Modal close={closeImage}>
 					<div className='absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 mx-auto my-auto'>
-						<Image src={selectedImage} alt='Large Image' className='w-full object-center object-cover' />
+						<Image
+							src={selectedImage}
+							alt='Large Image'
+							className='w-full object-center object-cover'
+							onClick={closeImage}
+						/>
 					</div>
 				</Modal>
 			)}

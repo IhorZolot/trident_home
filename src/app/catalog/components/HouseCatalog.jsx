@@ -1,6 +1,7 @@
 'use client'
-import Image from 'next/image'
 import React from 'react'
+import Image from 'next/image'
+
 import { homeArr } from '@/shared/Data/home-image-data'
 import { useModal } from '@/hooks/useModal'
 import Modal from '@/shared/Modal/Modal'
@@ -11,6 +12,7 @@ const itemsPerPage = 2
 
 const HouseCatalog = () => {
 	const [isFilterOpen, openFilter, closeFilter] = useModal()
+
 	return (
 		<div>
 			<h1 className='text-[#00204A] text-[26px] font-medium leading-[45px] py-4 px-2 lg:text-[46px] lg:-translate-x-[400px] '>

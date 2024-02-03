@@ -106,7 +106,7 @@ export const Order = () => {
 					</div>
 					<a
 						onClick={openPrivacy}
-						className='block px-2 pb-6 text-[rgba(61,61,61,0.65)] text-sm font-[275] leading-[17px] underline text-center mb-[80px]'
+						className='block px-2 pb-6 text-[rgba(61,61,61,0.65)] text-sm font-[275] leading-[17px] underline text-center mb-[80px] hover:text-mainBlue cursor-pointer'
 					>
 						You can read our Privacy Policy here
 					</a>
@@ -115,7 +115,7 @@ export const Order = () => {
 			{isPrivacyOpen && (
 				<Modal close={closePrivacy}>
 					<div className='w-[60%] absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 mx-auto my-auto border rounded-lg p-6 bg-white'>
-						<IoCloseSharp onClick={closePrivacy} className='absolute right-4 top-4 cursor-pointer' />
+						<IoCloseSharp onClick={closePrivacy} className='absolute right-4 top-4' />
 						<h1 className='mb-4 text-lg'>Privacy Policy</h1>
 						{privacyPolicy}
 					</div>
