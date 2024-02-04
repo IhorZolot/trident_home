@@ -6,8 +6,8 @@ import { FiMinus } from 'react-icons/fi'
 const FilterHouse = ({ closeFilter }) => {
 	return (
 		<div className='w-auto'>
-			<div className='bg-[#F0F0F0] flex py-2 justify-center'>
-				<h1 className=''>Filter</h1>
+			<div className='bg-[#E0DFDC] flex py-2'>
+				<h1 className='text-xs font-bold leading-[15px] uppercase tracking-[3.6px] px-4 py-4'>Search</h1>
 				<button className='absolute end-0 right-4 lg:hidden'>
 					<AiOutlineClose onClick={closeFilter} />
 				</button>
