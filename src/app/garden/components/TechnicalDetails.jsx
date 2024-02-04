@@ -9,7 +9,7 @@ import { PiGarageDuotone } from 'react-icons/pi'
 const TechnicalDetails = () => {
 	return (
 		<div className='mb-8 lg:order-2 px-8'>
-			<h1 className='text-[#00204A] text-[26px] font-light leading-[45px] mb-4 px-2'>Tecnical details </h1>
+			<h1 className='text-mainBlue text-[26px] font-light leading-[45px] mb-4 px-2'>Tecnical details </h1>
 			<ul className=' flex flex-col gap-2 px-2  w-[355px] shrink-0 border-neutral-100 shadow-[0px_3.818px_12.41px_0px_rgba(0,0,0,0.07)] border-[0.955px] border-solid'>
 				<li className='flex justify-between'>
 					<div className='flex items-center gap-2 py-2 px-2 uppercase'>

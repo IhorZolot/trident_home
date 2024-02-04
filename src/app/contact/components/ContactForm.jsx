@@ -37,7 +37,7 @@ const ContactForm = () => {
 		reset()
 	}
 	return (
-		<div className='lg:flex justify-center bg-[#F5F5F5]'>
+		<div className='lg:flex justify-center bg-sectionGray'>
 			<div className=' bg-white lg:w-8/12 '>
 				<ContactYou />
 				<form onSubmit={handleSubmit(submit)} className='px-2 pt-6 flex flex-col gap-6 lg:mx-[116px]'>

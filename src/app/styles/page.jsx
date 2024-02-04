@@ -2,11 +2,7 @@ import React from 'react'
 import StylesHome from './components/StylesHome'
 
 const styles = () => {
-	return (
-		<div>
-			<StylesHome />
-		</div>
-	)
+	return <StylesHome />
 }
 
 export default styles

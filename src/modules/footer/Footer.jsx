@@ -17,7 +17,7 @@ import FooterStyleHouse from './FooterStyleHouse/FooterStyleHouse'
 const Footer = () => {
 	const [isPrivacyOpen, openPrivacy, closePrivacy] = useModal()
 	return (
-		<div className='bg-[#00204A]  text-white py-6 px-6'>
+		<div className='bg-mainBlue  text-white py-6 px-6'>
 			<div className='lg:grid grid-cols-4 w-full gap-12 mb-12'>
 				<div className='flex flex-col gap-3 mb-8 text-[15px] not-italic font-light leading-[18px]'>
 					<div className='mb-8'>

@@ -13,18 +13,18 @@ const ContactUs = () => {
 				className='w-full h-[300px] lg:h-[660px]'
 			/>
 			<div className='px-2 w-full flex bg-white  justify-center flex-col py-6 lg:border-neutral-100 lg:shadow-[0px_0px_10px_0px_rgba(0,0,0,0.25)] border-solid lg:pb-[50px] lg:absolute lg:right-[36px] lg:top-[100px] z-1 lg:px-16 lg:w-1/3'>
-				<h1 className='pb-6 text-[#00204A] text-[26px] font-medium leading-[45px]'>Contact us</h1>
-				<div className='flex flex-col gap-2 mb-6 text-[#00204A] text-sm font-normal leading-[22px] '>
+				<h1 className='pb-6 text-mainBlue text-[26px] font-medium leading-[45px]'>Contact us</h1>
+				<div className='flex flex-col gap-2 mb-6 text-mainBlue text-sm font-normal leading-[22px] '>
 					<span>Forpeople Studio</span>
 					<span>1 Space Street</span>
 					<span>New York, NY-90814</span>
 				</div>
-				<div className='flex flex-col gap-2 mb-6 text-[#00204A] text-sm font-normal leading-[22.486px]'>
+				<div className='flex flex-col gap-2 mb-6 text-mainBlue text-sm font-normal leading-[22.486px]'>
 					<span>Email: hello@forpeop</span>
 					<span>Tel: +1-800-999-800</span>
 				</div>
 				<Button
-					styleButton='bg-[#00204A] text-white py-3 px-4 flex items-center gap-3 max-w-[155px] lg:absolute bottom-0 left-0'
+					styleButton='bg-mainBlue text-white py-3 px-4 flex items-center gap-3 max-w-[155px] lg:absolute bottom-0 left-0'
 					styleArrow='text-white'
 					href='tel:+380670670000'
 				>

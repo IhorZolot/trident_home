@@ -15,7 +15,7 @@ const HouseCatalog = () => {
 
 	return (
 		<div>
-			<h1 className='text-[#00204A] text-[26px] font-medium leading-[45px] py-4 px-2 lg:text-[46px] lg:-translate-x-[400px] '>
+			<h1 className='text-mainBlue text-[26px] font-medium leading-[45px] py-4 px-2 lg:text-[46px] lg:-translate-x-[400px] '>
 				Catalog
 			</h1>
 			<div className='flex gap-[8px] px-2 mb-12 lg:hidden'>
@@ -34,8 +34,8 @@ const HouseCatalog = () => {
 					{homeArr.map(item => (
 						<li key={item.id}>
 							<Image className='w-full object-cover' src={item.img} alt='Home' />
-							<h1 className='text-[#00204A] text-xl font-light leading-[44px]'>{item.title}</h1>
-							<p className='text-[#00204A] font-light leading-[23px]'>{item.desc}</p>
+							<h1 className='text-mainBlue text-xl font-light leading-[44px]'>{item.title}</h1>
+							<p className='text-mainBlue font-light leading-[23px]'>{item.desc}</p>
 						</li>
 					))}
 				</ul>

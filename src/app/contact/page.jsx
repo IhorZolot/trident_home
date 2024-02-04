@@ -4,10 +4,10 @@ import ContactForm from './components/ContactForm'
 
 const contact = () => {
 	return (
-		<div>
+		<>
 			<ContactUs />
 			<ContactForm />
-		</div>
+		</>
 	)
 }
 

@@ -6,7 +6,7 @@ import { Slider } from '@/shared/Slider/Slider'
 
 const Recomended = () => {
 	return (
-		<div className='text-[#00204A] px-2 mb-14'>
+		<div className='text-mainBlue px-2 mb-14'>
 			<h1 className=' text-[26px] font-light leading-[45px] mb-6 lg:text-[46px] lg:mb-12 lg:text-center'>
 				You recently viewed
 			</h1>

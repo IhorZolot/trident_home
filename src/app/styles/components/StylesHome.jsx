@@ -21,7 +21,7 @@ const StylesHome = () => {
 		<Container>
 			<div className='mb-12 lg:pt-12'>
 				<div className='lg:flex gap-8'>
-					<hi className='text-[#00204A] text-[26px] block font-medium leading-[45px] mb-6'>Styles</hi>
+					<hi className='text-mainBlue text-[26px] block font-medium leading-[45px] mb-6'>Styles</hi>
 					<div className='flex gap-2 mb-8'>
 						<SectionButton>Choose houses</SectionButton>
 					</div>

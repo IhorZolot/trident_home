@@ -24,7 +24,7 @@ const Gallery = () => {
 		<Container>
 			<div className='mb-12 lg:pt-20'>
 				<div className='lg:flex gap-12'>
-					<h1 className='text-[#00204A] text-[26px] block font-medium leading-[45px] mb-6 lg:text-[46px]'>Gallery</h1>
+					<h1 className='text-mainBlue text-[26px] block font-medium leading-[45px] mb-6 lg:text-[46px]'>Gallery</h1>
 					<div className='flex gap-4 mb-8'>
 						<SectionButton>Choose houses</SectionButton>
 						<SectionButton>Choose interiors</SectionButton>

@@ -9,7 +9,7 @@ const Produce = () => {
 		<Container>
 			<div className='mb-8 lg:flex lg:gap-12 lg:justify-between lg:mb-14'>
 				<div>
-					<span className='block w-[355px] text-[#00204A] text-[26px] font-light leading-[30px] mb-[54px] lg:w-[480px] lg:text-2xl lg:mb-[60px]'>
+					<span className='block w-[355px] text-mainBlue text-[26px] font-light leading-[30px] mb-[54px] lg:w-[480px] lg:text-2xl lg:mb-[60px]'>
 						Trident Modular Housing produce and assemble modular houses that are very high quality and they can be used
 						as temporary as well as permanent residence.
 					</span>
@@ -18,11 +18,11 @@ const Produce = () => {
 							<li key={item.title}>
 								<div className='flex gap-2 items-center'>
 									{item.icon}
-									<h3 className='w-[165px] text-[#00204A] text-xs font-bold leading-[normal] tracking-[3.6px] uppercase'>
+									<h3 className='w-[165px] text-mainBlue text-xs font-bold leading-[normal] tracking-[3.6px] uppercase'>
 										{item.title}
 									</h3>
 								</div>
-								<p className='block w-[210px] text-[#00204A] text-sm font-light ml-12'>{item.text}</p>
+								<p className='block w-[210px] text-mainBlue text-sm font-light ml-12'>{item.text}</p>
 							</li>
 						))}
 					</ul>

@@ -11,7 +11,7 @@ const GardenRoom = () => {
 	}
 
 	return (
-		<div className='flex flex-col py-6 text-[#00204A] lg:pt-24 lg:px-8 '>
+		<div className='flex flex-col py-6 text-mainBlue lg:pt-24 lg:px-8 '>
 			<h1 className='text-[26px] mb-6 lg:text-[46px] lg:font-normal lg:leading-[45px]'>Garden Room</h1>
 			<div className='lg:flex flex-row-reverse gap-6 justify-between'>
 				<div className='lg:w-1/2'>

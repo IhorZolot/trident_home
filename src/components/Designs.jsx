@@ -9,7 +9,7 @@ import { SectionButton } from '@/shared/Button/SectionButton'
 const Designs = () => {
 	return (
 		<section className='px-2 lg:px-8'>
-			<h1 className='text-[#00204A] block text-[26px] font-light leading-[45px] mb-6'>Our house designs</h1>
+			<h1 className='text-mainBlue block text-[26px] font-light leading-[45px] mb-6'>Our house designs</h1>
 			<div className='flex gap-2 mb-12 text-[15px] '>
 				<SectionButton styleButton>
 					<a href='/garden'>Garden rooms</a>
@@ -23,8 +23,8 @@ const Designs = () => {
 				{homeArr.slice(0, 3).map(item => (
 					<li key={item.id}>
 						<Image className='w-full object-cover' src={item.img} alt='Home' />
-						<h1 className='text-[#00204A] text-xl font-light leading-[44px]'>{item.title}</h1>
-						<p className='text-[#00204A] font-light leading-[23px]'>{item.desc}</p>
+						<h1 className='text-mainBlue text-xl font-light leading-[44px]'>{item.title}</h1>
+						<p className='text-mainBlue font-light leading-[23px]'>{item.desc}</p>
 					</li>
 				))}
 			</ul>

@@ -2,11 +2,7 @@ import React from 'react'
 import Interior from './components/Interior'
 
 const interior = () => {
-	return (
-		<div>
-			<Interior />
-		</div>
-	)
+	return <Interior />
 }
 
 export default interior

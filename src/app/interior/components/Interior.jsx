@@ -7,35 +7,35 @@ import { interiorArr } from '@/shared/Data/InteriorImgArr/interior-img-data'
 import SliderImage from '@/shared/SliderState/SliderState'
 
 const Interior = () => {
-	const [selectedStyle, setSelectedStyle] = useState('standard');
+	const [selectedStyle, setSelectedStyle] = useState('standard')
 
-	const handleStyleChange = (style) => {
-    setSelectedStyle(style);
-  };
-	const filteredImages = interiorArr.filter(item => item.style === selectedStyle);
+	const handleStyleChange = style => {
+		setSelectedStyle(style)
+	}
+	const filteredImages = interiorArr.filter(item => item.style === selectedStyle)
 
 	return (
 		<Container>
-			<div className='text-[#00204A] pb-10 lg:pt-20'>
+			<div className='text-mainBlue pb-10 lg:pt-20'>
 				<div className='lg:flex lg:justify-between'>
 					<h1 className='text-[26px] font-medium leading-[45px] lg:mb-4'>Interior</h1>
-					<p className='text-[18px] font-light leading-[45px] mb-4 lg:text-[23px]'>You can choose a design that you like</p>
+					<p className='text-[18px] font-light leading-[45px] mb-4 lg:text-[23px]'>
+						You can choose a design that you like
+					</p>
 				</div>
 				<div className='flex gap-4 mb-6'>
 					<SectionButton styleButton onClick={() => setSelectedStyle('standard')}>
 						STANDARD
 					</SectionButton>
 					<SectionButton onClick={() => setSelectedStyle('medi')}>MEDITERRANEAN</SectionButton>
-					<SectionButton onClick={() => setSelectedStyle('scan')}>
-						SCANDINAVIAN
-					</SectionButton>
+					<SectionButton onClick={() => setSelectedStyle('scan')}>SCANDINAVIAN</SectionButton>
 				</div>
 				<div className='lg:flex lg:flex-row-reverse gap-6'>
 					<div className='lg:flex lg:justify-between gap-6 lg:w-1/2'>
 						<h1 className='text-[23px] font-light leading-[45px] mb-6 uppercase lg:hidden'>Standard</h1>
-						<SliderImage  images={filteredImages} selectedStyle={selectedStyle} handleStyleChange={handleStyleChange}/>
+						<SliderImage images={filteredImages} selectedStyle={selectedStyle} handleStyleChange={handleStyleChange} />
 					</div>
-					<div className='text-[#00204A] flex flex-col gap-4 text-sm font-light leading-[22.486px] lg:top-[350px] lg:text-base lg:w-1/2'>
+					<div className='text-mainBlue flex flex-col gap-4 text-sm font-light leading-[22.486px] lg:top-[350px] lg:text-base lg:w-1/2'>
 						<h1 className='hidden lg:block lg:text-[23px] lg:font-light lg:leading-[45px] uppercase'>Standard</h1>
 						<p className='w-full'>
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the

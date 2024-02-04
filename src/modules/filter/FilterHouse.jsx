@@ -12,7 +12,7 @@ const FilterHouse = ({ closeFilter }) => {
 					<AiOutlineClose onClick={closeFilter} />
 				</button>
 			</div>
-			<div className='bg-[#F5F5F5] px-4'>
+			<div className='bg-sectionGray px-4'>
 				<form>
 					<h2 className=' uppercase py-2'>House type</h2>
 					<div className='flex flex-col gap-2 mb-4'>
@@ -77,7 +77,7 @@ const FilterHouse = ({ closeFilter }) => {
 						<button className='bg-[#E0DFDC] px-[68px] py-4 text-black text-[10px]  font-bold leading-3 tracking-[1px] uppercase'>
 							Clear
 						</button>
-						<button className='bg-[#F4D059] px-[68px] py-4 text-black text-[10px]  font-bold leading-3 tracking-[1px] uppercase'>
+						<button className='bg-mainYellow px-[68px] py-4 text-black text-[10px]  font-bold leading-3 tracking-[1px] uppercase'>
 							Filter
 						</button>
 					</div>

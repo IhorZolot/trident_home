@@ -24,7 +24,7 @@ export const Order = () => {
 		reset()
 	}
 	return (
-		<div className='lg:flex justify-center bg-[#F5F5F5] pb-[110px]'>
+		<div className='lg:flex justify-center bg-sectionGray pb-[110px]'>
 			<div className='bg-white lg:w-8/12'>
 				<ContactYou />
 				<form onSubmit={handleSubmit(submit)} className='px-2 pt-6 flex flex-col gap-6 lg:px-[116px]'>

@@ -16,7 +16,7 @@ const Interiors = () => {
 					alt='Int'
 				/>
 			</div>
-			<div className='bg-[#00204A] flex flex-col items-stretch relative lg:h-[330px] lg:w-full'>
+			<div className='bg-mainBlue flex flex-col items-stretch relative lg:h-[330px] lg:w-full'>
 				<h1 className='text-white w-[273px] text-xl font-light pl-[28px] pt-[108px] mb-[12px] lg:pl-[68px]'>
 					Trident - we love inviting interiors too!
 				</h1>

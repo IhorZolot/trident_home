@@ -34,7 +34,7 @@ const Sprite = ({ name }) => {
 						<g id='iPhone 13 mini - 1'>
 							<rect width='375' height='4692' transform='translate(-64 -4580)' fill='white' />
 							<g id='Group 25857'>
-								<rect id='Rectangle 3321' x='-64' y='-230.496' width='375' height='342.562' fill='#00204A' />
+								<rect id='Rectangle 3321' x='-64' y='-230.496' width='375' height='342.562' fill='mainBlue' />
 								<g id='Group 25855'>
 									<g id='svg'>
 										<g id='Frame'>

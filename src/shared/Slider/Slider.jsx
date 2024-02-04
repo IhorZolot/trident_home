@@ -23,20 +23,20 @@ export const Slider = ({ data, custom, slidesPerView }) => {
 				{data.map(item => (
 					<SwiperSlide key={item.id}>
 						<Image className='w-full object-cover' src={item.img} alt='Home' />
-						<h1 className='text-[#00204A] text-xl font-light leading-[44px]'>{item.title}</h1>
-						<p className='text-[#00204A] font-light leading-[23px]'>{item.desc}</p>
+						<h1 className='text-mainBlue text-xl font-light leading-[44px]'>{item.title}</h1>
+						<p className='text-mainBlue font-light leading-[23px]'>{item.desc}</p>
 					</SwiperSlide>
 				))}
 				<div className='custom-swiper-button-prev absolute top-[90px] left-0 z-10 '>
-					<div className='bg-[#00204A] w-[49px] h-[45px] flex justify-center items-center cursor-pointer hover:bg-yellow-500'>
+					<div className='bg-mainBlue w-[49px] h-[45px] flex justify-center items-center cursor-pointer hover:bg-yellow-500'>
 						<span className='text-white'>
 							<VscChevronLeft />
 						</span>
 					</div>
 				</div>
 				<div className='custom-swiper-button-next absolute top-[90px] right-0 z-10 '>
-					<div className='bg-[#F4D059] w-[49px] h-[45px] flex justify-center items-center cursor-pointer hover:bg-blue-500 '>
-						<span className='text-[#00204A]'>
+					<div className='bg-[mainYellow] w-[49px] h-[45px] flex justify-center items-center cursor-pointer hover:bg-blue-500 '>
+						<span className='text-mainBlue'>
 							<VscChevronRight />
 						</span>
 					</div>

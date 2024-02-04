@@ -9,7 +9,7 @@ const GardenPrice = () => {
 				<span className='font-light'>Price:</span>
 				£152,000
 			</p>
-			<Button styleButton='bg-[#F4D059] max-w-[180px] py-3 px-7 flex gap-4 items-center' href='/order' hoverButton>
+			<Button styleButton='bg-mainYellow max-w-[180px] py-3 px-7 flex gap-4 items-center' href='/order' hoverButton>
 				Order now
 			</Button>
 		</div>
