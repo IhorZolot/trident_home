@@ -11,7 +11,7 @@ const MobileMenu = ({ close }) => {
 
 	return (
 		<div className='bg-white'>
-			<Header />
+			<Header openModal />
 			<ul className='flex flex-col gap-8 justify-center items-center pt-6 '>
 				{navLinks.map(item => (
 					<li

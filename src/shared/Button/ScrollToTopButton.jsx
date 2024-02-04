@@ -1,6 +1,8 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 
+import { FaCircleArrowUp } from 'react-icons/fa6'
+
 const ScrollToTopButton = () => {
 	const [isVisible, setIsVisible] = useState(false)
 
@@ -26,12 +28,12 @@ const ScrollToTopButton = () => {
 
 	return (
 		<div
-			className={`fixed bottom-4 z-50 right-4 bg-blue-500 text-white p-2 rounded-full cursor-pointer opacity-0 transition-opacity ${
+			className={`fixed bottom-4 z-50 right-4 text-blue-900 text-4xl cursor-pointer opacity-0 transition-opacity ${
 				isVisible ? 'opacity-100' : ''
 			}`}
 			onClick={scrollToTop}
 		>
-			↑
+			<FaCircleArrowUp />
 		</div>
 	)
 }

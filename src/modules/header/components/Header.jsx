@@ -11,7 +11,7 @@ import MobileMenu from '../../mobileMenu/MobileMenu'
 import Button from '@/shared/Button/Button'
 import Logo from '@/shared/Logo/Logo'
 
-export const Header = () => {
+export const Header = ({ openModal }) => {
 	const [isMobileMenuOpen, openMenu, closeMenu] = useModal()
 
 	return (
@@ -26,7 +26,7 @@ export const Header = () => {
 				</a>
 				<Logo />
 				<NavBar />
-				<button onClick={isMobileMenuOpen ? closeMenu : openMenu}>
+				<button className={`${openModal ? 'hidden' : 'block'}`} onClick={isMobileMenuOpen ? closeMenu : openMenu}>
 					{isMobileMenuOpen ? (
 						<MdClose className='hover:text-yellow-500 lg:hidden relative z-50' />
 					) : (

@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from 'react'
 
-const Modal = ({ children, close, styleModal }) => {
+const Modal = ({ children, close }) => {
 	const onBackdropClick = event => {
 		if (event.target === event.currentTarget) {
 			close()
