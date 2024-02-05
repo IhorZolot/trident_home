@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 
 import { homeArr } from '@/shared/Data/home-image-data'
@@ -8,6 +8,7 @@ import Modal from '@/shared/Modal/Modal'
 import FilterHouse from '@/modules/filter/FilterHouse'
 import MyPagination from '@/shared/Pagination/Pagination'
 import { SortPrice } from './SortPrice'
+import { sortByPrice } from '@/shared/Data/InputData/select-data'
 
 const itemsPerPage = 2
 
@@ -33,9 +34,16 @@ const HouseCatalog = () => {
 					>
 						Filter
 					</button>
-					<button className='bg-[#F0F0F0] text-black text-xs  font-bold leading-[15px] tracking-[3.6px] uppercase px-4 py-4 mb-2 hover:bg-gray-400 cursor-pointer '>
-						Sort by price
-					</button>
+					<form className=''>
+						<select className='bg-[#F0F0F0] text-black text-xs  font-bold leading-[15px] tracking-[3.6px] uppercase px-4 py-4 mb-2 w-full pl-28 hover:bg-gray-400 cursor-pointer '>
+							<option value=''>Sort by price</option>
+							{sortByPrice.map(option => (
+								<option key={option.id} value={option.value}>
+									{`${option.value}`}
+								</option>
+							))}
+						</select>
+					</form>
 				</div>
 				<div className='px-2 mb-10'>
 					<SortPrice />

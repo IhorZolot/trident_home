@@ -18,7 +18,7 @@ const FilterHouse = ({ closeFilter }) => {
 		<div className='w-auto'>
 			<div className='bg-[#E0DFDC] flex py-2'>
 				<h1 className='text-xs font-bold leading-[15px] uppercase tracking-[3.6px] px-4 py-4'>Search</h1>
-				<button className='absolute end-0 right-4  lg:hidden'>
+				<button className='absolute end-0 right-6 top-6 lg:hidden'>
 					<AiOutlineClose onClick={closeFilter} />
 				</button>
 			</div>
