@@ -123,8 +123,8 @@ const FilterHouse = ({ closeFilter }) => {
 						<span className=' uppercase mb-2 py-2'>Number of bathrooms</span>
 						<input
 							type='text'
-							name='choose'
-							{...register('choose')}
+							name='bathrooms'
+							{...register('bathrooms')}
 							placeholder='Choose number'
 							className='py-4 px-4 max-w-[250px]'
 						/>
