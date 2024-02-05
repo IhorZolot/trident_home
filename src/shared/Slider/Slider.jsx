@@ -35,7 +35,7 @@ export const Slider = ({ data, custom, slidesPerView }) => {
 					</div>
 				</div>
 				<div className='custom-swiper-button-next absolute top-[90px] right-0 z-10 '>
-					<div className='bg-[mainYellow] w-[49px] h-[45px] flex justify-center items-center cursor-pointer hover:bg-blue-500 '>
+					<div className='bg-mainYellow w-[49px] h-[45px] flex justify-center items-center cursor-pointer hover:bg-blue-500 '>
 						<span className='text-mainBlue'>
 							<VscChevronRight />
 						</span>
