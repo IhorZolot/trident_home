@@ -52,8 +52,16 @@ export const Order = () => {
 						fieldName='selectOurFind'
 						register={register}
 					/>
-					<RadioButton label='Do you have architect`s drawings?' type='architectDrawings' />
-					<RadioButton label='Do you have planning permission?' type='planningPermission' />
+					<RadioButton
+						label='Do you have architect`s drawings?'
+						type='architectDrawings'
+						{...register('architectDrawings')}
+					/>
+					<RadioButton
+						label='Do you have planning permission?'
+						type='planningPermission'
+						{...register('planningPermission')}
+					/>
 					<Input
 						label='Name and surname'
 						placeholder='Please enter your name and surname'
