@@ -13,7 +13,7 @@ const Interior = () => {
 		setSelectedStyle(style)
 	}
 	const filteredImages = interiorArr.filter(item => item.style === selectedStyle)
-
+	console.log(filteredImages)
 	return (
 		<Container>
 			<div className='text-mainBlue pb-10 lg:pt-20'>

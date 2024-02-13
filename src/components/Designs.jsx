@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import { homeArr } from '@/shared/Data/home-image-data'
+import { houseData } from '@/shared/Data/home-image-data'
 import { Slider } from '@/shared/Slider/Slider'
 import { SectionButton } from '@/shared/Button/SectionButton'
 
@@ -20,7 +20,7 @@ const Designs = () => {
 			</div>
 
 			<ul className='flex flex-col gap-6 mb-12 lg:hidden'>
-				{homeArr.slice(0, 3).map(item => (
+				{houseData.slice(0, 3).map(item => (
 					<li key={item.id}>
 						<Image className='w-full object-cover' src={item.img} alt='Home' />
 						<h1 className='text-mainBlue text-xl font-light leading-[44px]'>{item.title}</h1>
@@ -28,7 +28,7 @@ const Designs = () => {
 					</li>
 				))}
 			</ul>
-			<Slider data={homeArr} slidesPerView={3} custom='hidden lg:block lg:flex-row lg:gap-12 lg:mb-14' />
+			<Slider data={houseData} slidesPerView={3} custom='hidden lg:block lg:flex-row lg:gap-12 lg:mb-14' />
 		</section>
 	)
 }

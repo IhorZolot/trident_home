@@ -3,15 +3,19 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { AiOutlineClose } from 'react-icons/ai'
 import { FiMinus } from 'react-icons/fi'
+import { filteredTypes } from './filteredTypes'
+import { useHouses } from '@/hooks/useHouses'
 
 const FilterHouse = ({ closeFilter }) => {
 	const { register, handleSubmit, reset } = useForm()
+	const { setFilteredData } = useHouses()
 	const submit = data => {
 		console.log(data)
-		reset()
+		setFilteredData(data)
 	}
 	const handleClear = () => {
 		reset()
+		setFilteredData(null)
 	}
 
 	return (
@@ -28,8 +32,7 @@ const FilterHouse = ({ closeFilter }) => {
 					<label className='flex gap-4'>
 						<input
 							type='checkbox'
-							name='house'
-							{...register('house')}
+							{...register(filteredTypes.bungalows)}
 							className='w-[20px] h-[20px] border border-solid border-[#ebe9e6]'
 						/>
 						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>Bungalows</span>
@@ -37,8 +40,7 @@ const FilterHouse = ({ closeFilter }) => {
 					<label className='flex gap-4'>
 						<input
 							type='checkbox'
-							name='storeyHouse'
-							{...register('storeyHouse')}
+							{...register(filteredTypes.onePlusHalf)}
 							className='w-[20px] h-[20px] border border-solid border-[#ebe9e6]'
 						/>
 						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>1.5-storey houses</span>
@@ -46,8 +48,7 @@ const FilterHouse = ({ closeFilter }) => {
 					<label className='flex gap-4'>
 						<input
 							type='checkbox'
-							name='twoStoreyHouse'
-							{...register('twoStoreyHouse')}
+							{...register(filteredTypes.twoStorey)}
 							className='w-[20px] h-[20px] border border-solid border-[#ebe9e6]'
 						/>
 						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>2-storey houses</span>
@@ -55,8 +56,7 @@ const FilterHouse = ({ closeFilter }) => {
 					<label className='flex gap-4'>
 						<input
 							type='checkbox'
-							name='garage'
-							{...register('garage')}
+							{...register(filteredTypes.garagesCarports)}
 							className='w-[20px] h-[20px] border border-solid border-[#ebe9e6]'
 						/>
 						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>Garages and carports</span>
@@ -67,8 +67,7 @@ const FilterHouse = ({ closeFilter }) => {
 					<label className='flex gap-4'>
 						<input
 							type='checkbox'
-							name='graven'
-							{...register('graven')}
+							{...register(filteredTypes.specialGraven)}
 							className='w-[20px] h-[20px] border border-solid border-[#ebe9e6]'
 						/>
 						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>Graven Hill</span>
@@ -80,8 +79,7 @@ const FilterHouse = ({ closeFilter }) => {
 						<input
 							type='text'
 							id='usableAreaFrom'
-							name='usableAreaFrom'
-							{...register('usableAreaFrom')}
+							{...register(filteredTypes.areaFrom)}
 							placeholder='from'
 							className='py-4 px-4 max-w-[100px]'
 						/>
@@ -89,8 +87,7 @@ const FilterHouse = ({ closeFilter }) => {
 						<input
 							type='text'
 							id='usableAreaTo'
-							name='usableAreaTo'
-							{...register('usableAreaTo')}
+							{...register(filteredTypes.areaTo)}
 							placeholder='to'
 							className='py-4 px-4 max-w-[100px]'
 						/>
@@ -102,8 +99,7 @@ const FilterHouse = ({ closeFilter }) => {
 						<input
 							type='text'
 							id='roomsFrom'
-							name='roomsFrom'
-							{...register('roomsFrom')}
+							{...register(filteredTypes.roomsFrom)}
 							placeholder='from'
 							className='py-4 px-4 max-w-[100px]'
 						/>
@@ -111,8 +107,7 @@ const FilterHouse = ({ closeFilter }) => {
 						<input
 							type='text'
 							id='roomsTo'
-							name='roomsTo'
-							{...register('roomsTo')}
+							{...register(filteredTypes.roomsTo)}
 							placeholder='to'
 							className='py-4 px-4 max-w-[100px]'
 						/>
@@ -123,8 +118,7 @@ const FilterHouse = ({ closeFilter }) => {
 						<span className=' uppercase mb-2 py-2'>Number of bathrooms</span>
 						<input
 							type='text'
-							name='bathrooms'
-							{...register('bathrooms')}
+							{...register(filteredTypes.bathrooms)}
 							placeholder='Choose number'
 							className='py-4 px-4 max-w-[250px]'
 						/>
@@ -135,13 +129,15 @@ const FilterHouse = ({ closeFilter }) => {
 					<label className='flex gap-3'>
 						<input
 							type='radio'
-							{...register('land', { required: true })}
+							{...register(filteredTypes.garage)}
+							value={1}
 							className='border border-solid border-[#ebe9e6]'
 						/>
 						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>yes</span>
 						<input
 							type='radio'
-							{...register('land', { required: true })}
+							{...register(filteredTypes.garage)}
+							value={0}
 							className='border border-solid border-[#ebe9e6]'
 						/>
 						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>no</span>

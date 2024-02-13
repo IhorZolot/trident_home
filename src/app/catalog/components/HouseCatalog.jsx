@@ -2,19 +2,26 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-import { homeArr } from '@/shared/Data/home-image-data'
+import { houseData } from '@/shared/Data/home-image-data'
 import { useModal } from '@/hooks/useModal'
 import Modal from '@/shared/Modal/Modal'
 import FilterHouse from '@/modules/filter/FilterHouse'
 import MyPagination from '@/shared/Pagination/Pagination'
 import { SortPrice } from './SortPrice'
 import { sortByPrice } from '@/shared/Data/InputData/select-data'
+import { useHouses } from '@/hooks/useHouses'
 
 const itemsPerPage = 2
 
 const HouseCatalog = () => {
 	const [isFilterOpen, openFilter, closeFilter] = useModal()
-
+	const [isImageOpen, openImage, closeImage] = useModal()
+	const [content, setContent] = useState()
+	const { houses } = useHouses()
+	const handleOpenImage = image => {
+		setContent(image)
+		openImage()
+	}
 	return (
 		<div>
 			<div className='flex justify-between items-center lg:px-8 lg:pt-14'>
@@ -34,22 +41,15 @@ const HouseCatalog = () => {
 					>
 						Filter
 					</button>
-					<form className=''>
-						<select className='bg-[#F0F0F0] text-black text-xs  font-bold leading-[15px] tracking-[3.6px] uppercase px-4 py-4 mb-2 w-full pl-28 hover:bg-gray-400 cursor-pointer '>
-							<option value=''>Sort by price</option>
-							{sortByPrice.map(option => (
-								<option key={option.id} value={option.value}>
-									{`${option.value}`}
-								</option>
-							))}
-						</select>
-					</form>
+					<SortPrice styleButton='bg-[#F0F0F0] text-black text-xs font-bold leading-[15px] tracking-[3.6px] uppercase px-4 py-4 mb-2 w-full pl-28 hover:bg-gray-400 cursor-pointer ' />
 				</div>
 				<div className='px-2 mb-10'>
-					<SortPrice />
+					<div className='hidden lg:flex lg:justify-end lg:mb-12'>
+						<SortPrice />
+					</div>
 					<ul className='grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-12 lg:mb-8'>
-						{homeArr.slice(0, 6).map(item => (
-							<li key={item.id}>
+						{houses.slice(0, 6).map(item => (
+							<li onClick={() => handleOpenImage(item.img)} key={item.id}>
 								<Image className='w-full object-cover' src={item.img} alt='Home' />
 								<h1 className='text-mainBlue text-xl font-light leading-[44px]'>{item.title}</h1>
 								<p className='text-mainBlue font-light leading-[23px]'>{item.desc}</p>
@@ -57,12 +57,17 @@ const HouseCatalog = () => {
 						))}
 					</ul>
 					<div className='flex justify-center items-center mb-4'>
-						<MyPagination items={homeArr} itemsPerPage={itemsPerPage} />
+						<MyPagination items={houseData} itemsPerPage={itemsPerPage} />
 					</div>
 				</div>
 				{isFilterOpen && (
 					<Modal close={closeFilter}>
 						<FilterHouse closeFilter={closeFilter} />
+					</Modal>
+				)}
+				{isImageOpen && (
+					<Modal close={closeImage}>
+						<Image src={content} alt='afadsf' onClick={closeImage} />
 					</Modal>
 				)}
 			</div>

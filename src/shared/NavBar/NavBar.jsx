@@ -6,7 +6,7 @@ import { navLinks } from '../Data/nav-links'
 
 const NavBar = ({ classes }) => {
 	const activeLink = usePathname()
-	console.log(activeLink)
+
 	return (
 		<ul className={`${classes ? classes : ' '} hidden lg:flex gap-8`}>
 			{navLinks.map(item => (

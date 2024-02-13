@@ -8,7 +8,6 @@ const RadioButton = ({ label, type, register }) => {
 				<input
 					className='border rounded-[11px] border-solid border-[#EBE9E6]'
 					type='radio'
-					name={type}
 					value='yes'
 					{...register(type)}
 				/>
@@ -16,7 +15,6 @@ const RadioButton = ({ label, type, register }) => {
 				<input
 					className='border rounded-[11px] border-solid border-[#EBE9E6]'
 					type='radio'
-					name={type}
 					value='no'
 					{...register(type)}
 				/>

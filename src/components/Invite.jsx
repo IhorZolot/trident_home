@@ -10,7 +10,7 @@ import Button from '@/shared/Button/Button'
 const Invite = () => {
 	return (
 		<section className='mb-8 lg:mb-16'>
-			<Image src={home1} alt='Home' className='w-full object-cover lg:hidden ' />
+			<Image src={home1} alt='Home' className='w-full object-cover lg:hidden' />
 			<Image src={image144} alt='Home' className='hidden lg:block lg:w-full' />
 			<a
 				className='bg-mainBlue py-4 px-2 flex items-center hover:bg-yellow-500 hover:text-black transition-transform duration-900 text-white

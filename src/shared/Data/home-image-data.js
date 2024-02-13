@@ -5,85 +5,10 @@ import home4 from './SmallImgArray/home4.png'
 import home5 from './SmallImgArray/home5.png'
 import home6 from './SmallImgArray/home6.png'
 
-export const homeArr = [
-	{
-		id: '1',
-		img: home1,
-		title: 'Garden Room',
-		desc: 'A room where you can work, study, and design',
-	},
-	{
-		id: '2',
-		img: home2,
-		title: 'Garden Room',
-		desc: 'A room where you can work, study, and design',
-	},
-	{
-		id: '3',
-		img: home3,
-		title: 'Garden Room',
-		desc: 'A room where you can work, study, and design',
-	},
-	{
-		id: '4',
-		img: home4,
-		title: 'Garden Room',
-		desc: 'A room where you can work, study, and design',
-	},
-	{
-		id: '5',
-		img: home5,
-		title: 'Garden Room',
-		desc: 'A room where you can work, study, and design',
-	},
-	{
-		id: '6',
-		img: home6,
-		title: 'Garden Room',
-		desc: 'A room where you can work, study, and design',
-	},
-	{
-		id: '7',
-		img: home1,
-		title: 'Garden Room',
-		desc: 'A room where you can work, study, and design',
-	},
-	{
-		id: '8',
-		img: home2,
-		title: 'Garden Room',
-		desc: 'A room where you can work, study, and design',
-	},
-	{
-		id: '9',
-		img: home3,
-		title: 'Garden Room',
-		desc: 'A room where you can work, study, and design',
-	},
-	{
-		id: '10',
-		img: home4,
-		title: 'Garden Room',
-		desc: 'A room where you can work, study, and design',
-	},
-	{
-		id: '11',
-		img: home5,
-		title: 'Garden Room',
-		desc: 'A room where you can work, study, and design',
-	},
-	{
-		id: '12',
-		img: home6,
-		title: 'Garden Room',
-		desc: 'A room where you can work, study, and design',
-	},
-]
-
 export const houseData = [
 	{
 		id: 0,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: 'Garden Saloon',
 		type: 'Bungalows',
 		usableArea: 120,
@@ -102,9 +27,9 @@ export const houseData = [
 	},
 	{
 		id: 13,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: 'Cozy Loft',
-		type: '1.5-storey houses',
+		type: '1,5-storey houses',
 		usableArea: 150,
 		rooms: 8,
 		bathrooms: 3,
@@ -122,7 +47,7 @@ export const houseData = [
 	},
 	{
 		id: 1,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: 'Modern Oasis',
 		type: '2-storey houses',
 		usableArea: 200,
@@ -142,7 +67,7 @@ export const houseData = [
 	},
 	{
 		id: 2,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: "Car Enthusiast's Haven",
 		type: 'Garages and carports',
 		usableArea: 76,
@@ -162,7 +87,7 @@ export const houseData = [
 	},
 	{
 		id: 3,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: 'Rustic Retreat',
 		type: 'Bungalows',
 		usableArea: 110,
@@ -182,7 +107,7 @@ export const houseData = [
 	},
 	{
 		id: 4,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: 'Elegant Haven',
 		type: '2-storey houses',
 		usableArea: 180,
@@ -202,9 +127,9 @@ export const houseData = [
 	},
 	{
 		id: 5,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: 'Country Charm',
-		type: '1.5-storey houses',
+		type: '1,5-storey houses',
 		usableArea: 160,
 		rooms: 7,
 		bathrooms: 2,
@@ -222,7 +147,7 @@ export const houseData = [
 	},
 	{
 		id: 6,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: 'Serenity Villa',
 		type: 'Bungalows',
 		usableArea: 140,
@@ -242,7 +167,7 @@ export const houseData = [
 	},
 	{
 		id: 7,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: 'Urban Retreat',
 		type: '2-storey houses',
 		usableArea: 190,
@@ -262,7 +187,7 @@ export const houseData = [
 	},
 	{
 		id: 8,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: 'Lakefront Lodge',
 		type: 'Bungalows',
 		usableArea: 130,
@@ -282,9 +207,9 @@ export const houseData = [
 	},
 	{
 		id: 9,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: 'Hillside Haven',
-		type: '1.5-storey houses',
+		type: '1,5-storey houses',
 		usableArea: 170,
 		rooms: 9,
 		bathrooms: 3,
@@ -302,7 +227,7 @@ export const houseData = [
 	},
 	{
 		id: 10,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: 'Majestic Mansion',
 		type: '2-storey houses',
 		usableArea: 220,
@@ -322,7 +247,7 @@ export const houseData = [
 	},
 	{
 		id: 11,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: 'Sunset Sanctuary',
 		type: 'Bungalows',
 		usableArea: 140,
@@ -342,9 +267,9 @@ export const houseData = [
 	},
 	{
 		id: 12,
-		desc: 'Lorem ipsum',
+		desc: 'A room where you can work, study, and design',
 		title: 'Tranquil Terrace',
-		type: '1.5-storey houses',
+		type: '1,5-storey houses',
 		usableArea: 160,
 		rooms: 8,
 		bathrooms: 2,
