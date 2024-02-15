@@ -8,10 +8,11 @@ import { useHouses } from '@/hooks/useHouses'
 
 const FilterHouse = ({ closeFilter }) => {
 	const { register, handleSubmit, reset } = useForm()
-	const { setFilteredData } = useHouses()
+	const { setFilteredData, setPage } = useHouses()
 	const submit = data => {
 		console.log(data)
 		setFilteredData(data)
+		setPage(1)
 	}
 	const handleClear = () => {
 		reset()

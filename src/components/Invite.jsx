@@ -9,8 +9,12 @@ import Button from '@/shared/Button/Button'
 
 const Invite = () => {
 	return (
-		<section className='mb-8 lg:mb-16'>
-			<Image src={home1} alt='Home' className='w-full object-cover lg:hidden' />
+		<section className='mb-8 px-2 lg:mb-16 lg:px-8 '>
+			<Image
+				src={home1}
+				alt='Home'
+				className='w-full object-cover lg:hidden bg-gradient-to-r from-cyan-500 to-blue-500'
+			/>
 			<Image src={image144} alt='Home' className='hidden lg:block lg:w-full' />
 			<a
 				className='bg-mainBlue py-4 px-2 flex items-center hover:bg-yellow-500 hover:text-black transition-transform duration-900 text-white
@@ -22,7 +26,7 @@ const Invite = () => {
 				</p>
 				<VscArrowRight />
 			</a>
-			<p className='hidden lg:block w-[460px]  text-white text-[30px] font-medium leading-[37px] absolute top-[400px] px-4'>
+			<p className='hidden lg:block w-[530px]  text-white text-[37px] font-medium leading-[37px] absolute top-[450px] pl-12 '>
 				A place that is more than an office - a place where you can create work-life balance
 			</p>
 			<Button

@@ -1,10 +1,10 @@
 'use client'
 import { useState } from 'react'
 
-import { SectionButton } from '@/shared/Button/SectionButton'
 import Container from '@/shared/Container/Container'
-import { interiorArr } from '@/shared/Data/InteriorImgArr/interior-img-data'
 import SliderImage from '@/shared/SliderState/SliderState'
+import { SectionButton } from '@/shared/Button/SectionButton'
+import { interiorArr } from '@/shared/Data/InteriorImgArr/interior-img-data'
 
 const Interior = () => {
 	const [selectedStyle, setSelectedStyle] = useState('standard')
@@ -13,7 +13,6 @@ const Interior = () => {
 		setSelectedStyle(style)
 	}
 	const filteredImages = interiorArr.filter(item => item.style === selectedStyle)
-	console.log(filteredImages)
 	return (
 		<Container>
 			<div className='text-mainBlue pb-10 lg:pt-20'>

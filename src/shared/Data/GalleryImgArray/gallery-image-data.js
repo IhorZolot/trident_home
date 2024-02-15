@@ -12,37 +12,46 @@ export const galleryArr = [
 	{
 		id: '1',
 		img: rectangle3276,
+		type: 'Houses',
 	},
 	{
 		id: '2',
 		img: rectangle3277,
+		type: 'Houses',
 	},
 	{
 		id: '3',
 		img: rectangle3278,
+		type: 'Houses',
 	},
 	{
 		id: '4',
 		img: rectangle3281,
+		type: 'Houses',
 	},
 	{
 		id: '5',
 		img: rectangle3282,
+		type: 'Houses',
 	},
 	{
 		id: '6',
 		img: rectangle3283,
+		type: 'Interiors',
 	},
 	{
 		id: '7',
 		img: rectangle3284,
+		type: 'Interiors',
 	},
 	{
 		id: '8',
 		img: rectangle3285,
+		type: 'Interiors',
 	},
 	{
 		id: '9',
 		img: rectangle3286,
+		type: 'Interiors',
 	},
 ]

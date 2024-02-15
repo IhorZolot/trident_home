@@ -24,7 +24,7 @@ const Interiors = () => {
 					Our architects have prepared some stunning ready-made interior designs...check them out...
 				</p>
 				<Button
-					styleButton='px-8 py-3 bg-yellow-400 max-w-[180px] flex gap-4 items-center lg:translate-y-[61px] lg:translate-x-8'
+					styleButton='px-8 py-3 bg-yellow-400 max-w-[180px] flex gap-4 items-center lg:translate-y-[80px] lg:translate-x-8'
 					hoverButton
 					href='/interior'
 				>

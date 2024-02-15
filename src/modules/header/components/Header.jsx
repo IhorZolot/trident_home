@@ -18,7 +18,7 @@ export const Header = ({ openModal }) => {
 		<>
 			<div className='flex py-4 px-8 space-y-1 w-full  justify-between relative'>
 				<a
-					className='hidden lg:flex lg:flex-col lg:bg-yellow-400 lg:w-[125px] lg:h-[125px] lg:text-[13px] uppercase lg:absolute lg:right-[36px] lg:top-1 lg:justify-center lg:z-20 lg:px-4 lg:hover:bg-blue-800 lg:hover:text-white transition-transform duration-900'
+					className='hidden lg:flex lg:flex-col lg:bg-yellow-400 lg:w-[125px] lg:h-[125px] lg:text-[13px] uppercase lg:absolute lg:right-[32px] lg:top-1 lg:justify-center lg:z-20 lg:px-4 lg:hover:bg-blue-800 lg:hover:text-white transition-transform duration-900'
 					href='/order'
 				>
 					<span className='font-bold'>Order</span>

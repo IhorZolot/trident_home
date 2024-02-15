@@ -1,6 +1,7 @@
 import React from 'react'
-import Container from '../shared/Container/Container'
 import Image from 'next/image'
+
+import Container from '../shared/Container/Container'
 import produce1 from '../../public/images/produce1.png'
 import { qualityArr } from '@/shared/Data/quality-data'
 

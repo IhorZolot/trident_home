@@ -8,6 +8,7 @@ export const HousesContext = createContext()
 export const HousesProvider = ({ children }) => {
 	const houses = houseData
 	const [filteredData, setFilteredData] = useState(null)
+	const [page, setPage] = useState(1)
 
 	const getFilterHouses = () => {
 		if (!filteredData) return houses
@@ -53,6 +54,8 @@ export const HousesProvider = ({ children }) => {
 		houses: getFilterHouses(),
 		filteredData,
 		setFilteredData,
+		page,
+		setPage,
 	}
-	return <HousesContext.Provider value={contextValue}> {children}</HousesContext.Provider>
+	return <HousesContext.Provider value={contextValue}>{children}</HousesContext.Provider>
 }

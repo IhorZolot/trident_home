@@ -9,8 +9,8 @@ import { useModal } from '@/hooks/useModal'
 import Modal from '@/shared/Modal/Modal'
 
 const StylesHome = () => {
-	const [selectedImage, setSelectedImage] = useState(null)
 	const [isImageOpen, openImage, closeImage] = useModal()
+	const [selectedImage, setSelectedImage] = useState()
 
 	const handleImageClick = imageSrc => {
 		setSelectedImage(imageSrc)
@@ -28,13 +28,12 @@ const StylesHome = () => {
 				</div>
 				<ul className='grid gap-6 lg:grid-cols-3'>
 					{stylesArr.map(item => (
-						<li key={item.id} className='relative overflow-hidden  '>
+						<li key={item.id} className='relative overflow-hidden' onClick={() => handleImageClick(item.img)}>
 							<Image
 								src={item.img}
 								alt='img'
 								layout='intrinsic'
 								className='w-[100%] aspect-square object-cover cursor-pointer hover:scale-105'
-								onClick={() => handleImageClick(item.img)}
 							/>
 						</li>
 					))}
@@ -42,13 +41,8 @@ const StylesHome = () => {
 			</div>
 			{isImageOpen && (
 				<Modal close={closeImage}>
-					<div className='absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 mx-auto my-auto'>
-						<Image
-							src={selectedImage}
-							alt='Large Image'
-							className='w-full object-center object-cover'
-							onClick={closeImage}
-						/>
+					<div className='absolute top-1/2 left-1/2  -translate-y-1/2 -translate-x-1/2'>
+						<Image src={selectedImage} alt='Large Image' onClick={closeImage} />
 					</div>
 				</Modal>
 			)}

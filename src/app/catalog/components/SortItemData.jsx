@@ -1,12 +1,11 @@
 import React from 'react'
-import { sortByPrice } from '@/shared/Data/InputData/select-data'
 
-export const SortPrice = ({ onChange, styleButton }) => {
+export const SortItemData = ({ onChange, styleButton, item, options }) => {
 	return (
 		<form>
 			<select className={styleButton} onChange={onChange}>
-				<option value=''>Sort by price</option>
-				{sortByPrice.map(option => (
+				<option value=''>{item}</option>
+				{options.map(option => (
 					<option key={option.id} value={option.value}>
 						{`${option.value}`}
 					</option>

@@ -22,77 +22,107 @@ export const houseArr = [
 	{
 		id: '1',
 		img: homebul1,
+		style: 'standart',
 	},
 	{
 		id: '2',
 		img: homebul2,
+		style: 'modular',
 	},
 	{
 		id: '3',
 		img: homebul3,
+		style: 'modular',
 	},
 	{
 		id: '4',
 		img: homebul4,
+		style: 'modular',
 	},
 	{
 		id: '5',
 		img: homebul5,
+		style: 'modular',
 	},
 	{
 		id: '6',
 		img: homebul6,
+		style: 'modular',
 	},
 	{
 		id: '7',
 		img: homebul7,
+		style: 'modular',
 	},
 	{
 		id: '8',
 		img: homebul8,
+		style: 'modular',
 	},
 	{
 		id: '9',
 		img: homebul9,
+		style: 'modular',
 	},
 	{
 		id: '10',
 		img: homebul10,
+		style: 'modular',
 	},
 	{
 		id: '11',
 		img: homebul11,
+		style: 'modular',
 	},
 	{
 		id: '12',
 		img: homebul12,
+		style: 'standart',
 	},
 	{
 		id: '13',
 		img: homebul13,
+		style: 'standart',
 	},
 	{
 		id: '14',
 		img: homebul14,
+		style: 'modular',
 	},
 	{
 		id: '15',
 		img: homebul15,
+		style: 'modular',
 	},
 	{
 		id: '16',
 		img: homebul16,
+		style: 'modular',
 	},
 	{
 		id: '17',
 		img: homebul17,
+		style: 'standart',
 	},
 	{
 		id: '18',
 		img: homebul18,
+		style: 'standart',
 	},
 	{
 		id: '19',
 		img: homebul19,
+		style: 'standart',
+	},
+]
+
+export const sortByHouses = [
+	{
+		id: '1',
+		value: 'standart',
+	},
+	{
+		id: '2',
+		value: 'modular',
 	},
 ]
