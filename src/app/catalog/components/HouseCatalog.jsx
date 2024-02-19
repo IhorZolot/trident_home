@@ -60,7 +60,7 @@ const HouseCatalog = () => {
 						Filter
 					</button>
 					<SortItemData
-						styleButton='bg-[#F0F0F0] text-black text-xs font-bold leading-[15px] tracking-[3.6px] uppercase  py-4 px-10 mb-2 w-full hover:bg-gray-400 cursor-pointer '
+						styleButton='bg-[#F0F0F0] text-black text-xs font-bold leading-[15px] tracking-[3.6px] uppercase  py-4 px-10 mb-2 w-full hover:bg-gray-400 cursor-pointer focus:outline-none focus:border-yellow-400'
 						options={uniquePrices}
 						item={'Sort by price'}
 						onChange={handleSortByPrice}

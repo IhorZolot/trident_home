@@ -15,19 +15,19 @@ export const DesktopPage = () => {
   return (
     <div className='hidden lg:block'>
       <GardenRoom />
-    <div className='flex gap-4 justify-between '>
+    <div className='flex  justify-between gap-12'>
       <section className='grid'>
       <GardenPrice />
       <GardenInteriors />
       </section>
-      <section className='grid'>
+      <section className='grid '>
       <VideoGerden />
       <Documents />
       </section>
     </div>
     <div className='grid grid-cols-2'>
       <TechnicalDetails />
-      <Floorplans  className=''/>
+      <Floorplans/>
     </div>
     <Quality />
     <Order />

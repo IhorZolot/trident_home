@@ -12,14 +12,17 @@ export const stylesArr = [
 	{
 		id: '1',
 		img: homestyle1,
+		styles: 'street'
 	},
 	{
 		id: '2',
 		img: homestyle2,
+		styles: 'street'
 	},
 	{
 		id: '3',
 		img: homestyle3,
+		styles: 'street'
 	},
 	{
 		id: '4',

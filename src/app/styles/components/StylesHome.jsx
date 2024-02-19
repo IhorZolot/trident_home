@@ -11,11 +11,18 @@ import Modal from '@/shared/Modal/Modal'
 const StylesHome = () => {
 	const [isImageOpen, openImage, closeImage] = useModal()
 	const [selectedImage, setSelectedImage] = useState()
+	const [selectedHouse, setSelectedHouse] = useState('')
 
 	const handleImageClick = imageSrc => {
 		setSelectedImage(imageSrc)
 		openImage()
 	}
+	
+	const handleStyleChange = style => {
+		const filteredHouses = stylesArr.filter(item => item.styles === style)
+		setSelectedHouse(filteredHouses)
+	}
+   const houseToDisplay = selectedHouse.length > 0 ? selectedHouse : stylesArr
 
 	return (
 		<Container>
@@ -23,11 +30,11 @@ const StylesHome = () => {
 				<div className='lg:flex gap-8'>
 					<hi className='text-mainBlue text-[26px] block font-medium leading-[45px] mb-6'>Styles</hi>
 					<div className='flex gap-2 mb-8'>
-						<SectionButton>Choose houses</SectionButton>
+						<SectionButton onClick={()=>handleStyleChange('street') }>Choose styles</SectionButton>
 					</div>
 				</div>
 				<ul className='grid gap-6 lg:grid-cols-3'>
-					{stylesArr.map(item => (
+					{houseToDisplay.map(item => (
 						<li key={item.id} className='relative overflow-hidden' onClick={() => handleImageClick(item.img)}>
 							<Image
 								src={item.img}

@@ -8,7 +8,7 @@ import Button from '@/shared/Button/Button'
 
 const GardenInteriors = () => {
 	return (
-		<div className='lg:px-8 '>
+		<div className='lg:px-8 relative '>
 			<div className='lg:w-[121px] lg:h-[121px] bg-mainYellow absolute -z-10'></div>
 			<div className='lg:flex justify-between lg:px-6 lg:py-6'>
 				<div className='bg-sectionGray px-2 mb-[98px]'>
@@ -22,7 +22,7 @@ const GardenInteriors = () => {
 						<Image src={image55} alt='img' className='w-1/3' />
 					</div>
 					<Button
-						styleButton='bg-mainBlue px-4 py-4 text-white text-xl font-light translate-y-8 lg:translate-x-[160px] flex gap-2 items-center max-w-[245px] '
+						styleButton='bg-mainBlue px-4 py-4 text-white text-xl font-light translate-y-8 lg:translate-x-[150px] flex gap-2 items-center max-w-[245px] '
 						styleArrow='text-white'
 						href='/styles'
 					>
