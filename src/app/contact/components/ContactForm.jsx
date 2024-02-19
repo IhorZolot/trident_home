@@ -46,7 +46,6 @@ const ContactForm = () => {
 						placeholder='Name'
 						fieldName='name'
 						register={register}
-						style='border border-solid border-[#EBE9E6] py-4 px-4 '
 						custom={{ required: true, minLength: 3 }}
 						error={errors.name && errors.name.message}
 					/>
@@ -55,7 +54,6 @@ const ContactForm = () => {
 						placeholder='phone'
 						fieldName='phone'
 						register={register}
-						style='border border-solid border-[#EBE9E6] py-4 px-4'
 						custom={{ valueAsNumber: true }}
 						error={errors.phone && errors.phone.message}
 					/>
@@ -64,7 +62,6 @@ const ContactForm = () => {
 						placeholder='email'
 						fieldName='email'
 						register={register}
-						style='border border-solid border-[#EBE9E6] py-4 px-4'
 						error={errors.email && errors.email.message}
 					/>
 					<Input
@@ -72,7 +69,6 @@ const ContactForm = () => {
 						placeholder='Type message'
 						fieldName='comment'
 						register={register}
-						style='border border-solid border-[#EBE9E6]  px-4 pt-4 pb-12'
 						error={errors.comment && errors.comment.message}
 					/>
 					<Checkbox

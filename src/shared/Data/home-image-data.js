@@ -275,7 +275,6 @@ export const houseData = [
 		bathrooms: 2,
 		garage: false,
 		img: home6,
-
 		price: 190000,
 		floors: 1.5,
 		bedrooms: 3,

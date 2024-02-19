@@ -1,10 +1,14 @@
 'use client'
 import React from 'react'
-import { useForm } from 'react-hook-form'
 import { AiOutlineClose } from 'react-icons/ai'
 import { FiMinus } from 'react-icons/fi'
+
+import { useForm } from 'react-hook-form'
 import { filteredTypes } from './filteredTypes'
 import { useHouses } from '@/hooks/useHouses'
+import { Input } from '@/shared/InputFields/Input'
+import Checkbox from '@/shared/InputFields/Checkbox'
+import RadioButton from '@/shared/InputFields/RadioButton'
 
 const FilterHouse = ({ closeFilter }) => {
 	const { register, handleSubmit, reset } = useForm()
@@ -30,119 +34,91 @@ const FilterHouse = ({ closeFilter }) => {
 			<form onSubmit={handleSubmit(submit)} className='bg-sectionGray px-4'>
 				<h2 className=' uppercase py-2'>House type</h2>
 				<div className='flex flex-col gap-2 mb-4'>
-					<label className='flex gap-4'>
-						<input
-							type='checkbox'
-							{...register(filteredTypes.bungalows)}
-							className='w-[20px] h-[20px] border border-solid border-[#ebe9e6]'
-						/>
-						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>Bungalows</span>
-					</label>
-					<label className='flex gap-4'>
-						<input
-							type='checkbox'
-							{...register(filteredTypes.onePlusHalf)}
-							className='w-[20px] h-[20px] border border-solid border-[#ebe9e6]'
-						/>
-						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>1.5-storey houses</span>
-					</label>
-					<label className='flex gap-4'>
-						<input
-							type='checkbox'
-							{...register(filteredTypes.twoStorey)}
-							className='w-[20px] h-[20px] border border-solid border-[#ebe9e6]'
-						/>
-						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>2-storey houses</span>
-					</label>
-					<label className='flex gap-4'>
-						<input
-							type='checkbox'
-							{...register(filteredTypes.garagesCarports)}
-							className='w-[20px] h-[20px] border border-solid border-[#ebe9e6]'
-						/>
-						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>Garages and carports</span>
-					</label>
+					<Checkbox
+						text='Bungalows'
+						register={register}
+						fieldName={filteredTypes.bungalows}
+						style='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'
+					/>
+					<Checkbox
+						text='1.5-storey houses'
+						register={register}
+						fieldName={filteredTypes.onePlusHalf}
+						style='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'
+					/>
+					<Checkbox
+						text='2-storey houses'
+						register={register}
+						fieldName={filteredTypes.twoStorey}
+						style='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'
+					/>
+					<Checkbox
+						text='Garages and carports'
+						register={register}
+						fieldName={filteredTypes.garagesCarports}
+						style='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'
+					/>
 				</div>
 				<div className='mb-4'>
 					<h2 className=' uppercase mb-2 py-2'>Special house designs</h2>
-					<label className='flex gap-4'>
-						<input
-							type='checkbox'
-							{...register(filteredTypes.specialGraven)}
-							className='w-[20px] h-[20px] border border-solid border-[#ebe9e6]'
-						/>
-						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>Graven Hill</span>
-					</label>
+					<Checkbox
+						text='Graven Hill'
+						register={register}
+						fieldName={filteredTypes.specialGraven}
+						style='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'
+					/>
 				</div>
 				<div className='mb-4'>
-					<h2 className=' uppercase mb-2 py-2'>Usable area</h2>
+					<h2 className='uppercase mb-2 py-2'>Usable area</h2>
 					<label className='flex items-center gap-3'>
-						<input
-							type='text'
-							id='usableAreaFrom'
-							{...register(filteredTypes.areaFrom)}
+						<Input
+							register={register}
 							placeholder='from'
-							className='py-4 px-4 max-w-[100px]'
+							fieldName={filteredTypes.areaFrom}
+							id='usableAreaFrom'
 						/>
 						<FiMinus />
-						<input
-							type='text'
-							id='usableAreaTo'
-							{...register(filteredTypes.areaTo)}
+						<Input
+							register={register}
 							placeholder='to'
-							className='py-4 px-4 max-w-[100px]'
+							id='usableAreaTo'
+							fieldName={filteredTypes.areaTo}
 						/>
 					</label>
 				</div>
 				<div className='mb-4'>
 					<h2 className=' uppercase mb-2 py-2'>Number of rooms</h2>
 					<label className='flex items-center gap-3'>
-						<input
-							type='text'
-							id='roomsFrom'
-							{...register(filteredTypes.roomsFrom)}
+						<Input
+							register={register}
 							placeholder='from'
-							className='py-4 px-4 max-w-[100px]'
+							fieldName={filteredTypes.roomsFrom}
+							id='roomsFrom'
 						/>
 						<FiMinus />
-						<input
-							type='text'
-							id='roomsTo'
-							{...register(filteredTypes.roomsTo)}
+						<Input
+							register={register}
 							placeholder='to'
-							className='py-4 px-4 max-w-[100px]'
+							id='roomsTo'
+							fieldName={filteredTypes.roomsTo}
 						/>
 					</label>
 				</div>
 				<div className='mb-4'>
-					<label className='flex flex-col'>
-						<span className=' uppercase mb-2 py-2'>Number of bathrooms</span>
-						<input
-							type='text'
-							{...register(filteredTypes.bathrooms)}
-							placeholder='Choose number'
-							className='py-4 px-4 max-w-[250px]'
-						/>
-					</label>
+					<Input
+					label='Number of bathrooms'
+					register={register}
+					placeholder='Choose number'
+					fieldName={filteredTypes.bathrooms}
+					customStyle=' uppercase mb-2 py-2'
+					/>
 				</div>
 				<div className='mb-4'>
-					<span className='block uppercase mb-2 py-2'>Garage</span>
-					<label className='flex gap-3'>
-						<input
-							type='radio'
-							{...register(filteredTypes.garage)}
-							value={1}
-							className='border border-solid border-[#ebe9e6]'
-						/>
-						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>yes</span>
-						<input
-							type='radio'
-							{...register(filteredTypes.garage)}
-							value={0}
-							className='border border-solid border-[#ebe9e6]'
-						/>
-						<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>no</span>
-					</label>
+					<span className='block uppercase py-2'>Garage</span>
+					<RadioButton
+    type={filteredTypes.garage}
+    register={register}
+  />
 				</div>
 				<div className='pb-6 grid grid-cols-2'>
 					<button

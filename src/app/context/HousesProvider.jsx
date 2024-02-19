@@ -30,12 +30,12 @@ export const HousesProvider = ({ children }) => {
 			})
 			.filter(item => {
 				const areaFrom = filteredData['area-from'] ? +filteredData['area-from'] : 0
-				const areaTo = filteredData['area-to'] ? +filteredData['area-t0'] : 9999999
+				const areaTo = filteredData['area-to'] ? +filteredData['area-to'] : 9999999
 				return item.usableArea >= areaFrom && item.usableArea <= areaTo
 			})
 			.filter(item => {
 				const roomsFrom = filteredData['rooms-from'] ? +filteredData['rooms-from'] : 0
-				const roomsTo = filteredData['rooms-to'] ? +filteredData['rooms-t0'] : 9999999
+				const roomsTo = filteredData['rooms-to'] ? +filteredData['rooms-to'] : 9999999
 				return item.rooms >= roomsFrom && item.rooms <= roomsTo
 			})
 			.filter(item => {

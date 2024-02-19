@@ -59,38 +59,32 @@ export const Order = () => {
 						placeholder='Please enter your name and surname'
 						register={register}
 						fieldName='name'
-						style='border border-solid border-[#EBE9E6] py-4 px-4 placeholder-neutral-400 focus:outline-none focus:border-yellow-400'
 					/>
 					<Input
 						label='City'
 						placeholder='Enter city name'
 						register={register}
 						fieldName='city'
-						style='border border-solid border-[#EBE9E6] py-4 px-4 placeholder-neutral-400 focus:outline-none focus:border-yellow-400'
 					/>
 					<Input
 						label='Phone number'
 						placeholder='Please enter your phone number'
 						register={register}
 						fieldName='phone'
-						style='border border-solid border-[#EBE9E6] py-4 px-4 placeholder-neutral-400 focus:outline-none focus:border-yellow-400'
 					/>
 					<Input
 						label='Email address'
 						placeholder='Please enter your email address'
 						register={register}
 						fieldName='email'
-						style='border border-solid border-[#EBE9E6] py-4 px-4 placeholder-neutral-400 focus:outline-none focus:border-yellow-400'
 					/>
 					<Checkbox
-						label='agree'
 						register={register}
 						fieldName='agree'
 						style='text-black text-[11px] font-normal leading-[13px] uppercase'
 						text='I agree that TRIDENT can contact me to send me the Catalogue of houses.'
 					/>
 					<Checkbox
-						label='rules'
 						register={register}
 						fieldName='rules'
 						style='text-black text-[11px] font-normal leading-[13px] uppercase'

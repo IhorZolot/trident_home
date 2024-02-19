@@ -7,7 +7,7 @@ import { useModal } from '@/hooks/useModal'
 import { useHouses } from '@/hooks/useHouses'
 import Container from '@/shared/Container/Container'
 import MyPagination from '@/shared/Pagination/Pagination'
-import { SortItemData } from '@/app/catalog/components/SortItemData'
+import { SortItemData } from '@/shared/SortItemData/SortItemData'
 import { houseArr, sortByHouses } from '@/shared/Data/StylesHouseArray/house-array'
 
 const itemsPerPage = 9

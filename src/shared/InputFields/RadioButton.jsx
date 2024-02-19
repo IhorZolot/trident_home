@@ -8,14 +8,14 @@ const RadioButton = ({ label, type, register }) => {
 				<input
 					className='border rounded-[11px] border-solid border-[#EBE9E6]'
 					type='radio'
-					value='yes'
+					value={1}
 					{...register(type)}
 				/>
 				<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>yes</span>
 				<input
 					className='border rounded-[11px] border-solid border-[#EBE9E6]'
 					type='radio'
-					value='no'
+					value={0}
 					{...register(type)}
 				/>
 				<span className='text-[rgba(0,0,0,0.60)] text-[15px] font-light leading-[18px]'>no</span>
