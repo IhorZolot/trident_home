@@ -78,7 +78,7 @@ const HouseCatalog = () => {
 					</div>
 					<ul className='grid grid-cols-1 gap-6 mb-8 lg:grid-cols-2 lg:gap-12 lg:mb-8'>
 						{currentItems.map(item => (
-							<li onClick={() => handleOpenImage(item.img)} key={item.id}>
+							<li onClick={() => handleOpenImage(item)} key={item.id}>
 								<Image className='w-full object-cover' src={item.img} alt='Home' />
 								<h1 className='text-mainBlue text-xl font-light leading-[44px]'>{item.title}</h1>
 								<p className='text-mainBlue font-light leading-[23px]'>{item.desc}</p>
@@ -96,12 +96,6 @@ const HouseCatalog = () => {
 				)}
 				{isImageOpen && (
 					<Modal close={closeImage}>
-						{/* <div className='absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 mx-auto my-auto'>
-								<Image src={content} 
-								alt='Photo'
-								title
-								  onClick={closeImage} />
-						</div> */}
 						<HouseDetails content={content}/>
 					</Modal>
 				)}
