@@ -55,7 +55,7 @@ const Modular = () => {
 								src={item.img}
 								alt='img'
 								layout='responsive'
-								className='w-[100%] aspect-square object-cover cursor-pointer hover:scale-105'
+								className='w-[100%] aspect-square object-cover hover:scale-105'
 							/>
 						</li>
 					))}

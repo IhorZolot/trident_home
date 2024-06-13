@@ -96,7 +96,7 @@ const HouseCatalog = () => {
 				)}
 				{isImageOpen && (
 					<Modal close={closeImage}>
-						<HouseDetails content={content}/>
+						<HouseDetails content={content} 	close={closeImage}/>
 					</Modal>
 				)}
 			</div>

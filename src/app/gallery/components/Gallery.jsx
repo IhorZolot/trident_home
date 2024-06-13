@@ -41,7 +41,7 @@ const Gallery = () => {
 				<ul className='grid gap-6 lg:grid-cols-3'>
 					{filteredHouses.slice(0, !isMobile ? 6 : filteredHouses.length).map(item => (
 						<li key={item.id} onClick={() => handleImageClick(item.img)}>
-							<Image src={item.img} alt='img' className='w-full cursor-pointer hover:scale-105' />
+							<Image src={item.img} alt='img' className='w-full hover:scale-105' />
 						</li>
 					))}
 				</ul>
