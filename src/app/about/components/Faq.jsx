@@ -6,7 +6,7 @@ import { FaPlus } from 'react-icons/fa6'
 import { FiMinus } from 'react-icons/fi'
 
 import Container from '@/shared/Container/Container'
-import faq19 from '../../../../public/images/order/faq19.png'
+import faq19 from '@public/images/order/faq19.png'
 import { faqData } from '@/shared/Data/Faq/faqData'
 
 export const Faq = () => {

@@ -7,7 +7,7 @@ import { MdClose } from 'react-icons/md'
 import Modal from '@/shared/Modal/Modal'
 import { useModal } from '@/hooks/useModal'
 import NavBar from '@/shared/NavBar/NavBar'
-import MobileMenu from '../../mobileMenu/MobileMenu'
+import MobileMenu from '@/modules/mobileMenu/MobileMenu'
 import Button from '@/shared/Button/Button'
 import Logo from '@/shared/Logo/Logo'
 

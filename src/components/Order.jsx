@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 
-import Container from '../shared/Container/Container'
-import orderbook from '../../public/images/order/orderbook.png'
+import Container from '@/shared/Container/Container'
+import orderbook from '@public/images/order/orderbook.png'
 import Button from '@/shared/Button/Button'
 
 const Order = () => {

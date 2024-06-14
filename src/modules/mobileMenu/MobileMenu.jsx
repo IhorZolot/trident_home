@@ -2,7 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { Header } from '../header/components/Header'
+import { Header } from '@/modules/header/components/Header'
 import { usePathname } from 'next/navigation'
 import { navLinks } from '@/shared/Data/nav-links'
 

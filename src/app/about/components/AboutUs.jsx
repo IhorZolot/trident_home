@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 
-import aboutus013 from '../../../../public/images/aboutus/aboutus013.png'
-import abouthome from '../../../../public/images/aboutus/abouthome.png'
+import aboutus013 from '@public/images/aboutus/aboutus013.png'
+import abouthome from '@public/images/aboutus/abouthome.png'
 
 export const AboutUs = () => {
 	return (

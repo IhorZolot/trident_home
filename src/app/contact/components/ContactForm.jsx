@@ -3,6 +3,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { IoCloseSharp } from 'react-icons/io5'
 
 import ContactYou from '@/shared/ContactYou/ContactYou'
 import { Input } from '@/shared/InputFields/Input'
@@ -10,7 +11,6 @@ import Checkbox from '@/shared/InputFields/Checkbox'
 import { FormButton } from '@/shared/Button/FormButton'
 import { useModal } from '@/hooks/useModal'
 import Modal from '@/shared/Modal/Modal'
-import { IoCloseSharp } from 'react-icons/io5'
 import { privacyPolicy } from '@/shared/Data/polisi-data'
 
 const ContactForm = () => {

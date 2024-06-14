@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 import { VscArrowRight } from 'react-icons/vsc'
 
-import home1 from '../../public/images/invite/home1.png'
-import image144 from '../../public/images/invite/image144.png'
+import home1 from '@public/images/invite/home1.png'
+import image144 from '@public/images/invite/image144.png'
 import Button from '@/shared/Button/Button'
 
 const Invite = () => {

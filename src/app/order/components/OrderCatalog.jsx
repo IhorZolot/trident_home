@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import home2 from '../../../../public/images/designs/home2.png'
+import home2 from '@public/images/designs/home2.png'
 
 const OrderCatalog = () => {
 	return (

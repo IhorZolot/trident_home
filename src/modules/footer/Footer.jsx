@@ -1,11 +1,11 @@
 'use client'
 import React from 'react'
-import { IoCloseSharp } from 'react-icons/io5'
-
-import { useModal } from '@/hooks/useModal'
 import { MdPhoneInTalk } from 'react-icons/md'
 import { PiMapPinLight } from 'react-icons/pi'
+import { IoCloseSharp } from 'react-icons/io5'
 import { LuMail } from 'react-icons/lu'
+
+import { useModal } from '@/hooks/useModal'
 import { privacyPolicy } from '@/shared/Data/polisi-data'
 import FollowUs from '@/shared/FollowUs/FollowUs'
 import FooterLink from './FooterLink/FooterLink'

@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 
-import int11 from '../../public/images/interiors/int11.png'
-import int12 from '../../public/images/interiors/int12.png'
+import int11 from '@public/images/interiors/int11.png'
+import int12 from '@public/images/interiors/int12.png'
 import Button from '@/shared/Button/Button'
 
 const Interiors = () => {
