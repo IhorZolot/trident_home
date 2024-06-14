@@ -11,11 +11,11 @@ const Invite = () => {
 	return (
 		<section className='mb-8 px-2 lg:mb-16 lg:px-8 '>
 			<Image
-				src={firstImg}
+				src={secondImg}
 				alt='Home'
 				className='w-full object-cover lg:hidden bg-gradient-to-r from-cyan-500 to-blue-500'
 			/>
-			<Image src={secondImg} alt='Home' className='hidden lg:block lg:w-full' />
+			<Image src={firstImg} alt='Home' className='hidden lg:block lg:w-full' />
 			<a
 				className='bg-mainBlue py-4 px-2 flex items-center hover:bg-yellow-500 hover:text-black transition-transform duration-900 text-white
 			 lg:hidden'
