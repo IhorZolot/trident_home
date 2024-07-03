@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Trident-home
 
-## Getting Started
+---
 
-First, run the development server:
+Цей проєкт [Trident-home](https://trident-home.vercel.app) є веб-додатком, створеним за допомогою Next.js, що дозволяє розробляти веб-додатки на основі React із рендерингом на стороні сервера та генерацією статичних веб-сайтів та одним із найпопулярніших інструментів для швидкої та ефективної розробки стильового дизайну веб-сайтів і додатків [Tailwind CSS](https://tailwindcss.com) також використовує різноманітні бібліотеки для забезпечення функціональності та стилізації.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+### Зміст
+
+1. [Dashboard for Medical Store](#dashboard-for-Medical-Store)
+2. [Встановлення](#встановлення)
+3. [Використання](#використання)
+4. [Техноголії](#техноголії)
+
+### Встановлення
+
+- Клонування репозиторію:
+  ```
+  git clone https://github.com/IhorZolot/trident_home.git
+  ```
+- Перейти у відповідну папку:
+
+```
+cd trident_home
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Встановити залежності використовуючи менеджер пакетів npm або yarn:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
 
-## Learn More
+або
 
-To learn more about Next.js, take a look at the following resources:
+```
+yarn install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Використання
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Запуск фронтенд проекту:
 
-## Deploy on Vercel
+```
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+yarn dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Технології
+
+| Технологія          | Опис                                                                     |
+| ------------------- | ------------------------------------------------------------------------ |
+| Next.js             | Фреймворк React для серверного рендерингу та генерації статичних сайтів  |
+| React               | Бібліотека для створення користувацьких інтерфейсів                      |
+| ReactDOM            | Віртуальна модель Document Object Model для React                        |
+| @emotion/react      | Бібліотека для стилізації компонентів за допомогою CSS-in-JS             |
+| @emotion/styled     | Бібліотека для створення стилізованих компонентів за допомогою CSS-in-JS |
+| @hookform/resolvers | Валідація даних для React Hook Form з використанням різних бібліотек     |
+| @mui/material       | Компоненти Material-UI для React                                         |
+| react-hook-form     | Бібліотека для створення та керування формами у React                    |
+| react-icons         | Колекція іконок для React                                                |
+| react-paginate      | Бібліотека для створення пагінації у React                               |
+| react-responsive    | Бібліотека для створення адаптивних компонентів у React                  |
+| swiper              | Бібліотека для створення слайдерів і каруселей                           |
+| zod                 | Бібліотека для валідації і парсингу даних                                |
+|                     |                                                                          |
+
+[Ihor Zolotoverkh](www.linkedin.com/in/ihor-zolotoverkh)
